@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CharacterHandler : MonoBehaviour
+public class MovementHandler : MonoBehaviour
 {
     [SerializeField] private Rigidbody rb;
     [SerializeField] private float MovementSpeed;
