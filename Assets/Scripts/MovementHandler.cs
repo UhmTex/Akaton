@@ -18,7 +18,7 @@ public class MovementHandler : MonoBehaviour
 
     private Vector3 playerVelocity;
 
-    private float smoothTurnTime = 0.1f;
+    private float smoothTurnTime = 0.6f;
     private float smoothTurnVelocity;
 
     private float horizontal;
@@ -35,6 +35,7 @@ public class MovementHandler : MonoBehaviour
 
     private void Update()
     {
+
         horizontal = Input.GetAxisRaw("Horizontal");
         vertical = Input.GetAxisRaw("Vertical");
 

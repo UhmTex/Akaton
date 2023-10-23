@@ -21,7 +21,7 @@ public class PickupScript : MonoBehaviour
         if (_numFound > 0)
         {
             var interactable = _colliders[0].gameObject;
-            if (interactable.layer.ToString() == "6")
+            if (interactable.CompareTag("Interactable"))
             {
                 _interactionDisplay.SetUp("E");
                 interactable.GetComponent<InteractableObjectScript>().Interact();
