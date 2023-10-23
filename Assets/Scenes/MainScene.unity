@@ -456,7 +456,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 370582524}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.16049767, y: -1e-45, z: -0, w: 0.9870362}
+  m_LocalRotation: {x: 0.16049767, y: 8.65484e-30, z: -1.9147596e-30, w: 0.9870362}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -577,12 +577,12 @@ MonoBehaviour:
   m_BindingMode: 4
   m_SplineCurvature: 0.2
   m_Orbits:
-  - m_Height: 6
+  - m_Height: 8
     m_Radius: 7
   - m_Height: 3
     m_Radius: 8
-  - m_Height: 0.4
-    m_Radius: 7
+  - m_Height: -0.5
+    m_Radius: 2
   m_LegacyHeadingBias: 3.4028235e+38
   m_Rigs:
   - {fileID: 1699423248}
@@ -721,7 +721,7 @@ MonoBehaviour:
   _interactionPointRadius: 1.18
   _interactableMask:
     serializedVersion: 2
-    m_Bits: 1
+    m_Bits: 64
   _numFound: 0
   _interactionDisplay: {fileID: 778088275}
 --- !u!143 &609378128
@@ -1335,7 +1335,7 @@ GameObject:
   - component: {fileID: 1082717315}
   - component: {fileID: 1082717314}
   - component: {fileID: 1082717318}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: EnteractbleObj
   m_TagString: Interactable
   m_Icon: {fileID: 0}
@@ -1885,7 +1885,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1686512500}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.14256498, y: -0.000000008840183, z: 0.0000000012733068, w: 0.9897855}
+  m_LocalRotation: {x: 0.14256498, y: -0.000000006109219, z: 8.79949e-10, w: 0.9897855}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1964,7 +1964,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1699423247}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.1784248, y: -0.0000000044287085, z: 8.030782e-10, w: 0.98395354}
+  m_LocalRotation: {x: 0.1784248, y: -4.761475e-15, z: 4.756087e-16, w: 0.9839536}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
