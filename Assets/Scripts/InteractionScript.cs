@@ -6,7 +6,7 @@ using UnityEngine;
 public class PickupScript : MonoBehaviour
 {
     [SerializeField] Transform _interactionPoint;
-    [SerializeField] float _interactionPointRadius = 0.5f;
+    [SerializeField] float _interactionPointRadius = 1f;
     [SerializeField] LayerMask _interactableMask;
     [SerializeField] int _numFound;
     [SerializeField] InteractionPromtUI _interactionDisplay;
@@ -15,8 +15,7 @@ public class PickupScript : MonoBehaviour
 
     private void Update()
     {
-        _numFound = Physics.OverlapSphereNonAlloc(_interactionPoint.position, _interactionPointRadius, _colliders,
-            _interactableMask);
+        _numFound = Physics.OverlapSphereNonAlloc(_interactionPoint.position, _interactionPointRadius, _colliders, _interactableMask);
 
         if (_numFound > 0)
         {
