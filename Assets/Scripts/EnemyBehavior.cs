@@ -15,6 +15,7 @@ public class EnemyBehavior : MonoBehaviour
     [SerializeField] float _interactionPointRadius = 1f;
     [SerializeField] LayerMask _interactableMask;
 
+
     private readonly Collider[] _colliders = new Collider[3];
 
     private Transform CurrentWalkPoint;
@@ -35,6 +36,7 @@ public class EnemyBehavior : MonoBehaviour
         if (!isPlayerDetected )
         {
             transform.position = Vector3.MoveTowards(transform.position, CurrentWalkPoint.position, WalkSpeed * Time.deltaTime);
+
             if (Vector3.Distance(transform.position, CurrentWalkPoint.position) < 1f)
             {
                 CurrentWalkPoint = WalkPoints[Random.Range(0, WalkPoints.Length)];
