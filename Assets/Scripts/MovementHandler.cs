@@ -35,8 +35,6 @@ public class MovementHandler : MonoBehaviour
 
     private void Update()
     {
-
-
         horizontal = Input.GetAxisRaw("Horizontal");
         vertical = Input.GetAxisRaw("Vertical");
 
