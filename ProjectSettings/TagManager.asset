@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Broken Crystal
   - Full Crystal
+  - Interactable
+  - DeathText
   layers:
   - Default
   - TransparentFX

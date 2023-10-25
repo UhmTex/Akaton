@@ -7,6 +7,7 @@ public class MovementHandler : MonoBehaviour
 {
     public CharacterController CharController;
     public Transform cam;
+    public bool PlayerIsDead = false;
 
     [SerializeField] float MovementSpeed = 6;
     [SerializeField] float JumpHeight = 5;
@@ -36,45 +37,48 @@ public class MovementHandler : MonoBehaviour
 
     private void Update()
     {
-        horizontal = Input.GetAxisRaw("Horizontal");
-        vertical = Input.GetAxisRaw("Vertical");
-
-        isGrounded = CharController.isGrounded;
-
-        direction = new Vector3(horizontal, 0, vertical).normalized;
-
-        if (direction.magnitude > 0.1f)
+        if (!PlayerIsDead)
         {
-            directionAngle = Mathf.Atan2(direction.x, direction.z) * Mathf.Rad2Deg + cam.eulerAngles.y;
-            dampAngle = Mathf.SmoothDampAngle(transform.eulerAngles.y, directionAngle, ref smoothTurnVelocity, smoothTurnTime);
-            transform.rotation = Quaternion.Euler(0f, dampAngle, 0f);
+            horizontal = Input.GetAxisRaw("Horizontal");
+            vertical = Input.GetAxisRaw("Vertical");
 
-            Vector3 moveDir = Quaternion.Euler(0f, directionAngle, 0f) * Vector3.forward;
-            CharController.Move(moveDir * (MovementSpeed + sprintBonus) * Time.deltaTime);
-        }
+            isGrounded = CharController.isGrounded;
 
-        if (isGrounded && playerVelocity.y < 0)
-        {
-            playerVelocity.y = 0f;
-        }
+            direction = new Vector3(horizontal, 0, vertical).normalized;
 
-        if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
-        {
-            playerVelocity.y += MathF.Sqrt(JumpHeight * -1.5f * worldGravity);
-        }
+            if (direction.magnitude > 0.1f)
+            {
+                directionAngle = Mathf.Atan2(direction.x, direction.z) * Mathf.Rad2Deg + cam.eulerAngles.y;
+                dampAngle = Mathf.SmoothDampAngle(transform.eulerAngles.y, directionAngle, ref smoothTurnVelocity, smoothTurnTime);
+                transform.rotation = Quaternion.Euler(0f, dampAngle, 0f);
 
-        if (Input.GetKey(KeyCode.LeftShift))
-        {
-            sprintBonus = 5f;
-        }
-        
-        if (Input.GetKeyUp(KeyCode.LeftShift))
-        {
-            sprintBonus = 0;
-        }
+                Vector3 moveDir = Quaternion.Euler(0f, directionAngle, 0f) * Vector3.forward;
+                CharController.Move(moveDir * (MovementSpeed + sprintBonus) * Time.deltaTime);
+            }
 
-        playerVelocity.y += worldGravity * Time.deltaTime;
-        CharController.Move(playerVelocity * Time.deltaTime);
+            if (isGrounded && playerVelocity.y < 0)
+            {
+                playerVelocity.y = 0f;
+            }
+
+            if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
+            {
+                playerVelocity.y += MathF.Sqrt(JumpHeight * -1.5f * worldGravity);
+            }
+
+            if (Input.GetKey(KeyCode.LeftShift))
+            {
+                sprintBonus = 5f;
+            }
+
+            if (Input.GetKeyUp(KeyCode.LeftShift))
+            {
+                sprintBonus = 0;
+            }
+
+            playerVelocity.y += worldGravity * Time.deltaTime;
+            CharController.Move(playerVelocity * Time.deltaTime);
+        }    
     }
 
 }

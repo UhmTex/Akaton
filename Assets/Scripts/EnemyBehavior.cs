@@ -15,6 +15,7 @@ public class EnemyBehavior : MonoBehaviour
     [SerializeField] Transform _interactionPoint;
     [SerializeField] float _interactionPointRadius = 1f;
     [SerializeField] LayerMask _interactableMask;
+    [SerializeField] DeathScript _deathScript;
 
     private readonly Collider[] _colliders = new Collider[3];
 
@@ -97,6 +98,11 @@ public class EnemyBehavior : MonoBehaviour
                 {
                     transform.position = Vector3.MoveTowards(transform.position, interpolatedPos, step);
                 }
+                else
+                {
+                    _deathScript.PlayDeath();
+                    Debug.Log("Game Over");
+                }
                
             }
             else
@@ -113,14 +119,6 @@ public class EnemyBehavior : MonoBehaviour
     {
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(_interactionPoint.position, _interactionPointRadius);
-    }
-
-    private void OnCollisionEnter(Collision collision)
-    {
-        if (collision.transform.CompareTag("Player"))
-        {
-            Debug.Log("Game Over");
-        }
     }
 
     private void LookAt(Transform Target)
