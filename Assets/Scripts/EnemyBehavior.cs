@@ -19,24 +19,42 @@ public class EnemyBehavior : MonoBehaviour
     private readonly Collider[] _colliders = new Collider[3];
 
     private Transform _playerTarget;
-    private Transform _chaseStartPos;
-
+    private Vector3 _starterPos;
     private Transform CurrentWalkPoint;
 
     private bool isPlayerDetected = false;
-
+    private bool aggroRemovedRecently = false;
+    private float aggroTimerCount = 3f;
+    private float aggroTime = 0f;
 
     private void Start()
     {
         CurrentWalkPoint = WalkPoints[0];
+        _starterPos = Vector3.Lerp(WalkPoints[0].position, WalkPoints[1].position, 0.5f);
     }
 
     private void Update()
-    {       
-        _numFound = Physics.OverlapSphereNonAlloc(_interactionPoint.position, _interactionPointRadius, _colliders, _interactableMask);
-        DetectAndAttack();
+    {
+        if (aggroRemovedRecently)
+        {
+            aggroTime += Time.deltaTime;
 
-        if (!isPlayerDetected )
+            if (aggroTime > aggroTimerCount)
+            {
+                aggroRemovedRecently = false;
+                aggroTime = 0f;
+            }
+        }
+
+        if (!aggroRemovedRecently) {
+            _numFound = Physics.OverlapSphereNonAlloc(_interactionPoint.position, _interactionPointRadius, _colliders, _interactableMask);
+        }
+
+
+        DetectAndAttack();
+        DeAggro();
+
+        if (!isPlayerDetected)
         {
             LookAt(CurrentWalkPoint);
             transform.position = Vector3.MoveTowards(transform.position, CurrentWalkPoint.position, WalkSpeed * Time.deltaTime);
@@ -46,10 +64,20 @@ public class EnemyBehavior : MonoBehaviour
                 CurrentWalkPoint = WalkPoints[Random.Range(0, WalkPoints.Length)];
             }
         }
-
     }
 
-    public void DetectAndAttack()
+    private void DeAggro()
+    {
+        if (isPlayerDetected) {
+            if (Vector3.Distance(_starterPos, _playerTarget.position) > 20f)
+            {
+                isPlayerDetected = false;
+                aggroRemovedRecently = true;
+            }
+        }
+    }
+
+    private void DetectAndAttack()
     {
         if (_numFound > 0)
         {
@@ -63,7 +91,6 @@ public class EnemyBehavior : MonoBehaviour
                 Vector3 interpolatedPos = Vector3.Lerp(transform.position, _playerTarget.position + new Vector3(0, 1, 0), 0.7f);
                 Debug.DrawLine(transform.position, interpolatedPos, Color.blue);
 
-                //transform.LookAt(interactable.transform.position + new Vector3(0,1,0));
                 LookAt(_playerTarget, 1.5f);
                 var step = ChaseSpeed * Time.deltaTime;
                 if (Vector3.Distance(transform.position, interpolatedPos) > 1f)
