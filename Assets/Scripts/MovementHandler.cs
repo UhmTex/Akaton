@@ -11,6 +11,7 @@ public class MovementHandler : MonoBehaviour
     [SerializeField] float MovementSpeed = 6;
     [SerializeField] float JumpHeight = 5;
 
+    private float sprintBonus = 0;
     private bool isGrounded;
 
     // Movement Variables
@@ -49,7 +50,7 @@ public class MovementHandler : MonoBehaviour
             transform.rotation = Quaternion.Euler(0f, dampAngle, 0f);
 
             Vector3 moveDir = Quaternion.Euler(0f, directionAngle, 0f) * Vector3.forward;
-            CharController.Move(moveDir * MovementSpeed * Time.deltaTime);
+            CharController.Move(moveDir * (MovementSpeed + sprintBonus) * Time.deltaTime);
         }
 
         if (isGrounded && playerVelocity.y < 0)
@@ -60,6 +61,16 @@ public class MovementHandler : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
         {
             playerVelocity.y += MathF.Sqrt(JumpHeight * -1.5f * worldGravity);
+        }
+
+        if (Input.GetKey(KeyCode.LeftShift))
+        {
+            sprintBonus = 5f;
+        }
+        
+        if (Input.GetKeyUp(KeyCode.LeftShift))
+        {
+            sprintBonus = 0;
         }
 
         playerVelocity.y += worldGravity * Time.deltaTime;

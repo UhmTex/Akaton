@@ -64,7 +64,7 @@ public class EnemyBehavior : MonoBehaviour
                 Debug.DrawLine(transform.position, interpolatedPos, Color.blue);
 
                 //transform.LookAt(interactable.transform.position + new Vector3(0,1,0));
-                LookAt(_playerTarget);
+                LookAt(_playerTarget, 1.5f);
                 var step = ChaseSpeed * Time.deltaTime;
                 if (Vector3.Distance(transform.position, interpolatedPos) > 1f)
                 {
@@ -88,9 +88,9 @@ public class EnemyBehavior : MonoBehaviour
         Gizmos.DrawWireSphere(_interactionPoint.position, _interactionPointRadius);
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnCollisionEnter(Collision collision)
     {
-        if (other.transform.CompareTag("Player"))
+        if (collision.transform.CompareTag("Player"))
         {
             Debug.Log("Game Over");
         }
@@ -99,6 +99,14 @@ public class EnemyBehavior : MonoBehaviour
     private void LookAt(Transform Target)
     {
         Vector3 relativePos = Target.position - transform.position;
+
+        Quaternion rotation = Quaternion.LookRotation(relativePos, Vector3.up);
+        transform.rotation = Quaternion.Slerp(transform.rotation, rotation, 5f * Time.deltaTime);
+    }
+
+    private void LookAt(Transform Target, float BonusHeight)
+    {
+        Vector3 relativePos = (Target.position + new Vector3(0, BonusHeight, 0)) - transform.position;
 
         Quaternion rotation = Quaternion.LookRotation(relativePos, Vector3.up);
         transform.rotation = Quaternion.Slerp(transform.rotation, rotation, 5f * Time.deltaTime);
