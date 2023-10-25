@@ -1,24 +1,9 @@
 fileFormatVersion: 2
-guid: cdbd6abc60fe51c4383a833614b7ce54
+guid: f5346d78e9119b048950563968a9c8b4
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: CrowBeak
-    second: {fileID: 2100000, guid: e651428fa6130294bb52b41179803b86, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: CrowBody
-    second: {fileID: 2100000, guid: 7d70d8d1f799614468a7a35b9624925b, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: CrowLegs
-    second: {fileID: 2100000, guid: ada9280404848ad4db2c069bcd54ebf6, type: 2}
+  externalObjects: {}
   materials:
     materialImportMode: 2
     materialName: 0
