@@ -83,7 +83,6 @@ public class EnemyBehavior : MonoBehaviour
         if (_numFound > 0)
         {
             var interactable = _colliders[0].gameObject;
-            Debug.Log(interactable.name);
             if (interactable.CompareTag("Player"))
             {
                 _playerTarget = interactable.transform;
