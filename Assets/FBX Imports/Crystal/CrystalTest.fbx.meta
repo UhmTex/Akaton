@@ -3,7 +3,17 @@ guid: effca6a9cc5e32a42bff467d2977324d
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Crystal
+    second: {fileID: 2100000, guid: 224b5c9e51ccfd246a0bce28776ea636, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Crystal.001
+    second: {fileID: 2100000, guid: a75e6f17816fd7348ba0d4bebf058efb, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -16,8 +26,7 @@ ModelImporter:
     optimizeGameObjects: 0
     removeConstantScaleCurves: 0
     motionNodeName: 
-    rigImportErrors: "Invalid Avatar Rig Configuration. Missing or invalid transform:\n\tRequired
-      human bone 'Hips' not found\n"
+    rigImportErrors: 
     rigImportWarnings: 
     animationImportErrors: 
     animationImportWarnings: 
