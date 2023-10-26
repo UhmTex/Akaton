@@ -18,7 +18,7 @@ public class DeathScript : MonoBehaviour
 
     private void Start()
     {
-        if (FirstlyDied)
+        if (FirstlyDied || SceneManager.GetActiveScene().buildIndex > 0)
         {
             GetComponent<CanvasGroup>().alpha = 1.0f;
             _fadeScriptCanvas.FadeOut();

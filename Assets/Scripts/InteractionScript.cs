@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PickupScript : MonoBehaviour
 {
@@ -9,6 +10,10 @@ public class PickupScript : MonoBehaviour
     [SerializeField] float _interactionPointRadius = 6f;
     [SerializeField] LayerMask _interactableMask;
     [SerializeField] InteractionPromtUI _interactionDisplay;
+    [SerializeField] FadeScript _nextLevelCanvas;
+    private bool _eWasPressed = false;
+    private float _timerForNextScene = 2;
+    private float _timerForFade = 2f;
 
     int _numFound;
 
@@ -25,6 +30,17 @@ public class PickupScript : MonoBehaviour
             {
                 _interactionDisplay.SetUp("E");
                 interactable.GetComponent<InteractableObjectScript>().Interact();
+                if (Input.GetKeyDown(KeyCode.E)) 
+                    _eWasPressed = true;
+                if (_eWasPressed && _timerForNextScene != 0)
+                    _timerForNextScene -= Time.deltaTime;
+                if (_timerForNextScene <= 0)
+                {
+                    _nextLevelCanvas.FadeIn();
+                    _timerForFade -= Time.deltaTime;
+                    if ( _timerForFade <= 0 )
+                        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+                }
             } 
         }
         else
