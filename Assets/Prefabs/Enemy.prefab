@@ -25,15 +25,15 @@ Transform:
   m_GameObject: {fileID: 561398716554639691}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.0751, y: 0.1089, z: 0.7091}
-  m_LocalScale: {x: 0.005, y: 0.005, z: 0.005}
+  m_LocalPosition: {x: 0.007510004, y: 0.010889981, z: 0.07091002}
+  m_LocalScale: {x: 0.0005, y: 0.0005, z: 0.0005}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1988506685692393202}
   - {fileID: 3802756587511748293}
   - {fileID: 1395988955992852980}
   - {fileID: 2883342238093127162}
-  m_Father: {fileID: 713049497438768149}
+  m_Father: {fileID: 3048838498854960481}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1013867385588127099
 GameObject:
@@ -4892,8 +4892,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1453557513507865409}
-  - {fileID: 6113644635830982615}
   - {fileID: 9005351294867500964}
   - {fileID: 2845978246750595623}
   - {fileID: 3048838498854960481}
@@ -19470,15 +19468,15 @@ Transform:
   m_GameObject: {fileID: 4344671632851291667}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.0751, y: 0.1089, z: 0.7091}
-  m_LocalScale: {x: 0.005, y: 0.005, z: 0.005}
+  m_LocalPosition: {x: -0.0075099953, y: 0.010889981, z: 0.07091002}
+  m_LocalScale: {x: 0.0005, y: 0.0005, z: 0.0005}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7250624592056767693}
   - {fileID: 4530295973485340855}
   - {fileID: 6167870710926493513}
   - {fileID: 5687419809702092062}
-  m_Father: {fileID: 713049497438768149}
+  m_Father: {fileID: 3048838498854960481}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5137204074632560968
 GameObject:
@@ -29439,6 +29437,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: f5346d78e9119b048950563968a9c8b4, type: 3}
       insertIndex: -1
       addedObject: {fileID: 7967230348072571113}
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: f5346d78e9119b048950563968a9c8b4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1453557513507865409}
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: f5346d78e9119b048950563968a9c8b4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6113644635830982615}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: f5346d78e9119b048950563968a9c8b4, type: 3}
       insertIndex: -1
