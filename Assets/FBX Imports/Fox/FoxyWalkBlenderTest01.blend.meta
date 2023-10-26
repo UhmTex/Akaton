@@ -3,32 +3,12 @@ guid: b0064973ff36cd0439cc29430c58e9fd
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: LegsPawsColor.004
-    second: {fileID: 2100000, guid: 6c7863fd9bf30934f8343f5f1f645bf1, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: OrangeFurColor.004
-    second: {fileID: 2100000, guid: dfa42e9beb39c5f4fb6cb70ddea2d9f3, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: WhiteFurColor.004
-    second: {fileID: 2100000, guid: 3979939b9bc5e6541bb0790634b53d6c, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: standardSurface1.004
-    second: {fileID: 2100000, guid: db20c35fecfdcce49962087ee3a3664c, type: 2}
+  externalObjects: {}
   materials:
     materialImportMode: 2
     materialName: 0
     materialSearch: 1
-    materialLocation: 0
+    materialLocation: 1
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
