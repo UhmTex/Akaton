@@ -8,6 +8,7 @@ public class MovementHandler : MonoBehaviour
     public CharacterController CharController;
     public Transform cam;
     public bool PlayerIsDead = false;
+    public Animator animator;
 
     [SerializeField] float MovementSpeed = 6;
     [SerializeField] float JumpHeight = 5;
@@ -53,7 +54,11 @@ public class MovementHandler : MonoBehaviour
                 transform.rotation = Quaternion.Euler(0f, dampAngle, 0f);
 
                 Vector3 moveDir = Quaternion.Euler(0f, directionAngle, 0f) * Vector3.forward;
+                animator.SetBool("isWalking", true);
                 CharController.Move(moveDir * (MovementSpeed + sprintBonus) * Time.deltaTime);
+            } else
+            {
+                animator.SetBool("isWalking", false);
             }
 
             if (isGrounded && playerVelocity.y < 0)
