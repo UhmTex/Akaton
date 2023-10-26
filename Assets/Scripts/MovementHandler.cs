@@ -15,6 +15,10 @@ public class MovementHandler : MonoBehaviour
 
     private float sprintBonus = 0;
     private bool isGrounded;
+    private bool isFalling = false;
+
+    private bool Jumped;
+
 
     // Movement Variables
     private float worldGravity;
@@ -47,6 +51,8 @@ public class MovementHandler : MonoBehaviour
 
             direction = new Vector3(horizontal, 0, vertical).normalized;
 
+
+
             if (direction.magnitude > 0.1f)
             {
                 directionAngle = Mathf.Atan2(direction.x, direction.z) * Mathf.Rad2Deg + cam.eulerAngles.y;
@@ -61,14 +67,15 @@ public class MovementHandler : MonoBehaviour
                 animator.SetBool("isWalking", false);
             }
 
-            if (isGrounded && playerVelocity.y < 0)
+            if (isGrounded && playerVelocity.y < 0 && !animator.GetBool("isJumping"))
             {
+                //animator.SetBool("isJumping", false);
                 playerVelocity.y = 0f;
             }
 
             if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
             {
-                playerVelocity.y += MathF.Sqrt(JumpHeight * -1.5f * worldGravity);
+                animator.SetBool("isJumping", true);
             }
 
             if (Input.GetKey(KeyCode.LeftShift))
@@ -84,6 +91,18 @@ public class MovementHandler : MonoBehaviour
             playerVelocity.y += worldGravity * Time.deltaTime;
             CharController.Move(playerVelocity * Time.deltaTime);
         }    
+    }
+
+    public void setFalling()
+    {
+        animator.SetBool("isJumping", false);
+        playerVelocity.y = 0f;
+    }
+
+    public void Jump()
+    {
+        animator.SetBool("isJumping", true);
+        playerVelocity.y += MathF.Sqrt(JumpHeight * -1.5f * worldGravity) * 2;
     }
 
 }
