@@ -963,8 +963,8 @@ ParticleSystemRenderer:
   m_RenderMode: 0
   m_MeshDistribution: 0
   m_SortMode: 0
-  m_MinParticleSize: 0.01
-  m_MaxParticleSize: 0.1
+  m_MinParticleSize: 0.0001
+  m_MaxParticleSize: 99999
   m_CameraVelocityScale: 0
   m_VelocityScale: 0
   m_LengthScale: 2
@@ -10734,7 +10734,7 @@ Transform:
   m_GameObject: {fileID: 73695949}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 2.108, y: -2.47, z: -56.931976}
+  m_LocalPosition: {x: 2.108, y: -2.09, z: -56.931976}
   m_LocalScale: {x: 2.538, y: 2.538, z: 2.538}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -13399,7 +13399,7 @@ GameObject:
   - component: {fileID: 218558148}
   - component: {fileID: 218558147}
   m_Layer: 0
-  m_Name: FloorFame (1)
+  m_Name: FloorEffect 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14496,17 +14496,26 @@ ParticleSystem:
         - serializedVersion: 3
           time: 0
           value: 1
-          inSlope: -2.020471
-          outSlope: -2.020471
-          tangentMode: 34
+          inSlope: 0.31672907
+          outSlope: 0.31672907
+          tangentMode: 0
           weightedMode: 0
           inWeight: 0
+          outWeight: 0.29515737
+        - serializedVersion: 3
+          time: 0.44161606
+          value: 0.84780395
+          inSlope: -1.1130191
+          outSlope: -1.1130191
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.18831724
           outWeight: 0.33333334
         - serializedVersion: 3
-          time: 0.49493408
-          value: 0
-          inSlope: -2.020471
-          outSlope: -2.020471
+          time: 0.7128464
+          value: 0.0045928955
+          inSlope: -3.1088376
+          outSlope: -3.1088376
           tangentMode: 34
           weightedMode: 0
           inWeight: 0.33333334
@@ -14833,7 +14842,7 @@ ParticleSystem:
         ctime6: 0
         ctime7: 0
         atime0: 0
-        atime1: 20046
+        atime1: 31226
         atime2: 0
         atime3: 0
         atime4: 0
@@ -21982,7 +21991,7 @@ GameObject:
   - component: {fileID: 480282520}
   - component: {fileID: 480282519}
   m_Layer: 0
-  m_Name: FloorFame
+  m_Name: FloorEffect 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -28365,8 +28374,8 @@ ParticleSystemRenderer:
   m_RenderMode: 0
   m_MeshDistribution: 0
   m_SortMode: 0
-  m_MinParticleSize: 0.01
-  m_MaxParticleSize: 0.1
+  m_MinParticleSize: 0.0001
+  m_MaxParticleSize: 99999
   m_CameraVelocityScale: 0
   m_VelocityScale: 0
   m_LengthScale: 2
@@ -33469,8 +33478,8 @@ ParticleSystemRenderer:
   m_RenderMode: 0
   m_MeshDistribution: 0
   m_SortMode: 0
-  m_MinParticleSize: 0.01
-  m_MaxParticleSize: 0.1
+  m_MinParticleSize: 0.0001
+  m_MaxParticleSize: 99999
   m_CameraVelocityScale: 0
   m_VelocityScale: 0
   m_LengthScale: 2
@@ -47633,8 +47642,8 @@ ParticleSystemRenderer:
   m_RenderMode: 0
   m_MeshDistribution: 0
   m_SortMode: 0
-  m_MinParticleSize: 0.01
-  m_MaxParticleSize: 0.1
+  m_MinParticleSize: 0.0001
+  m_MaxParticleSize: 99999
   m_CameraVelocityScale: 0
   m_VelocityScale: 0
   m_LengthScale: 2
