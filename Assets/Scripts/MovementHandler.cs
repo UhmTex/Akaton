@@ -60,7 +60,8 @@ public class MovementHandler : MonoBehaviour
                 Vector3 moveDir = Quaternion.Euler(0f, directionAngle, 0f) * Vector3.forward;
                 animator.SetBool("isWalking", true);
                 CharController.Move(moveDir * (MovementSpeed + sprintBonus) * Time.deltaTime);
-            } else
+            } 
+            else
             {
                 animator.SetBool("isWalking", false);
             }
@@ -73,17 +74,20 @@ public class MovementHandler : MonoBehaviour
 
             if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
             {
+                animator.SetTrigger("jumpActivated");
                 animator.SetBool("isJumping", true);
                 playerVelocity.y += MathF.Sqrt(JumpHeight * -1.5f * worldGravity);
             }
 
             if (Input.GetKey(KeyCode.LeftShift))
             {
+                animator.SetBool("isSprinting", true);
                 sprintBonus = 5f;
             }
 
             if (Input.GetKeyUp(KeyCode.LeftShift))
             {
+                animator.SetBool("isSprinting", false);
                 sprintBonus = 0;
             }
 
