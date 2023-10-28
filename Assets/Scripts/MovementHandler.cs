@@ -65,8 +65,9 @@ public class MovementHandler : MonoBehaviour
                 animator.SetBool("isWalking", false);
             }
 
-            if (isGrounded && playerVelocity.y < 0 && !animator.GetBool("isJumping"))
+            if (isGrounded && playerVelocity.y < 0)
             {
+                animator.SetBool("isJumping", false);
                 playerVelocity.y = 0f;
             }
 
