@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.29936957, g: 0.29936957, b: 0.29936957, a: 1}
+  m_IndirectSpecularColor: {r: 0.20132759, g: 0.29936957, b: 0.21920535, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2708,6 +2708,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9400ffe67275c1241887dc56ceb47162, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Cells: []
 --- !u!95 &311167330
 Animator:
   serializedVersion: 5
@@ -4476,6 +4477,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CharController: {fileID: 609378128}
   cam: {fileID: 963194228}
+  PlayerIsDead: 0
+  animator: {fileID: 0}
   MovementSpeed: 6
   JumpHeight: 5
 --- !u!4 &609378126
@@ -4514,6 +4517,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   _interactionDisplay: {fileID: 778088275}
+  _nextLevelCanvas: {fileID: 0}
 --- !u!143 &609378128
 CharacterController:
   m_ObjectHideFlags: 0
@@ -12765,7 +12769,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1686512500}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.14256498, y: -0.000000008515315, z: 0.0000000012265138, w: 0.9897855}
+  m_LocalRotation: {x: 0.14256498, y: 0.000000008515311, z: -0.0000000012265134, w: 0.9897855}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
