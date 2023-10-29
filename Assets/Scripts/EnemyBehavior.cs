@@ -10,6 +10,8 @@ public class EnemyBehavior : MonoBehaviour
     [SerializeField] private float WalkSpeed;
     public float ChaseSpeed = 6f;
 
+    public AudioSource AgroSound;
+
     public Transform[] WalkPoints;
     [SerializeField] int _numFound;
     [SerializeField] Transform _interactionPoint;
@@ -27,6 +29,7 @@ public class EnemyBehavior : MonoBehaviour
     private bool aggroRemovedRecently = false;
     private float aggroTimerCount = 3f;
     private float aggroTime = 0f;
+    private bool _playedAgroSound = false;
 
     private void Start()
     {
@@ -74,6 +77,8 @@ public class EnemyBehavior : MonoBehaviour
             {
                 isPlayerDetected = false;
                 aggroRemovedRecently = true;
+                AgroSound.mute = false;
+                _playedAgroSound = false;
             }
         }
     }
@@ -85,6 +90,12 @@ public class EnemyBehavior : MonoBehaviour
             var interactable = _colliders[0].gameObject;
             if (interactable.CompareTag("Player"))
             {
+                if (!_playedAgroSound)
+                {
+                    AgroSound.Play();
+                    _playedAgroSound = true;
+                }
+
                 _playerTarget = interactable.transform;
 
                 isPlayerDetected = true;
@@ -108,6 +119,7 @@ public class EnemyBehavior : MonoBehaviour
             {
                 _playerTarget = null;
                 isPlayerDetected = false;
+                AgroSound.Stop();
             }
         }
         else
