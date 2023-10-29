@@ -101,7 +101,7 @@ public class MovementHandler : MonoBehaviour
                 playerVelocity.y += MathF.Sqrt(JumpHeight * -1.5f * worldGravity);
             }
 
-            if (Input.GetKey(KeyCode.LeftShift))
+            if (Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift))
             {
                 animator.SetBool("isSprinting", true);
                 WalkSFX.Stop();
@@ -114,7 +114,7 @@ public class MovementHandler : MonoBehaviour
                 sprintBonus = 5f;
             }
 
-            if (Input.GetKeyUp(KeyCode.LeftShift))
+            if (Input.GetKeyUp(KeyCode.LeftShift) || Input.GetKeyUp(KeyCode.RightShift))
             {
                 animator.SetBool("isSprinting", false);
                 SprintSFX.Stop();
@@ -131,5 +131,4 @@ public class MovementHandler : MonoBehaviour
             JumpSFX.Stop();
         }
     }
-
 }
