@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
 public class MovementHandler : MonoBehaviour
@@ -122,7 +123,13 @@ public class MovementHandler : MonoBehaviour
 
             playerVelocity.y += worldGravity * Time.deltaTime;
             CharController.Move(playerVelocity * Time.deltaTime);
-        }    
+        }
+        else
+        {
+            SprintSFX.Stop();
+            WalkSFX.Stop();
+            JumpSFX.Stop();
+        }
     }
 
 }
