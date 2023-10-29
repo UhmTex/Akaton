@@ -10,6 +10,9 @@ public class MovementHandler : MonoBehaviour
     public bool PlayerIsDead = false;
     public Animator animator;
 
+    public AudioSource SprintSFX;
+    public AudioSource WalkSFX;
+
     [SerializeField] float MovementSpeed = 6;
     [SerializeField] float JumpHeight = 5;
 
@@ -59,11 +62,20 @@ public class MovementHandler : MonoBehaviour
 
                 Vector3 moveDir = Quaternion.Euler(0f, directionAngle, 0f) * Vector3.forward;
                 animator.SetBool("isWalking", true);
+                
+                if (!WalkSFX.isPlaying)
+                {
+                    WalkSFX.Play();
+                }
+
                 CharController.Move(moveDir * (MovementSpeed + sprintBonus) * Time.deltaTime);
             } 
             else
             {
                 animator.SetBool("isWalking", false);
+
+                WalkSFX.Stop();
+                SprintSFX.Stop();
             }
 
             if (isGrounded && playerVelocity.y < 0)
@@ -82,12 +94,20 @@ public class MovementHandler : MonoBehaviour
             if (Input.GetKey(KeyCode.LeftShift))
             {
                 animator.SetBool("isSprinting", true);
+                WalkSFX.Stop();
+                
+                if (!SprintSFX.isPlaying)
+                {
+                    SprintSFX.Play();
+                }
+
                 sprintBonus = 5f;
             }
 
             if (Input.GetKeyUp(KeyCode.LeftShift))
             {
                 animator.SetBool("isSprinting", false);
+                SprintSFX.Stop();
                 sprintBonus = 0;
             }
 
