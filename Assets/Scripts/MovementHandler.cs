@@ -12,6 +12,7 @@ public class MovementHandler : MonoBehaviour
 
     public AudioSource SprintSFX;
     public AudioSource WalkSFX;
+    public AudioSource JumpSFX;
 
     [SerializeField] float MovementSpeed = 6;
     [SerializeField] float JumpHeight = 5;
@@ -90,6 +91,11 @@ public class MovementHandler : MonoBehaviour
 
                 WalkSFX.Stop();
                 SprintSFX.Stop();
+
+                if (!JumpSFX.isPlaying)
+                {
+                    JumpSFX.Play();
+                }
 
                 playerVelocity.y += MathF.Sqrt(JumpHeight * -1.5f * worldGravity);
             }
