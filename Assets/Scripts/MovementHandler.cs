@@ -18,7 +18,6 @@ public class MovementHandler : MonoBehaviour
 
     private float sprintBonus = 0;
     private bool isGrounded;
-    private bool isFalling = false;
 
     private bool Jumped;
 
@@ -63,7 +62,7 @@ public class MovementHandler : MonoBehaviour
                 Vector3 moveDir = Quaternion.Euler(0f, directionAngle, 0f) * Vector3.forward;
                 animator.SetBool("isWalking", true);
                 
-                if (!WalkSFX.isPlaying)
+                if (!WalkSFX.isPlaying && !animator.GetBool("isJumping"))
                 {
                     WalkSFX.Play();
                 }
@@ -88,6 +87,10 @@ public class MovementHandler : MonoBehaviour
             {
                 animator.SetTrigger("jumpActivated");
                 animator.SetBool("isJumping", true);
+
+                WalkSFX.Stop();
+                SprintSFX.Stop();
+
                 playerVelocity.y += MathF.Sqrt(JumpHeight * -1.5f * worldGravity);
             }
 
@@ -96,7 +99,7 @@ public class MovementHandler : MonoBehaviour
                 animator.SetBool("isSprinting", true);
                 WalkSFX.Stop();
                 
-                if (!SprintSFX.isPlaying)
+                if (!SprintSFX.isPlaying && !animator.GetBool("isJumping"))
                 {
                     SprintSFX.Play();
                 }
