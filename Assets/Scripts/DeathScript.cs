@@ -14,7 +14,7 @@ public class DeathScript : MonoBehaviour
     [SerializeField] FadeScript _fadeScriptText;
     [SerializeField] MovementHandler _playersMovement;
     private bool _playerIsDead = false;
-    private float _timer = 7;
+    private float _timer = 11;
 
     private void Start()
     {
@@ -31,13 +31,16 @@ public class DeathScript : MonoBehaviour
         { 
             _timer -= Time.deltaTime;
 
-            if (_timer < 4)
+            if (_timer < 8)
             {
                 _fadeScriptText.FadeIn();
             }
+            if(_timer < 5)
+            {
+                _fadeScriptText.FadeOut();
+            }
             if (_timer < 0)
             {
-                _fadeScriptText.GetComponent<CanvasGroup>().alpha = 0f;
                 SceneManager.LoadScene(SceneManager.GetActiveScene().name);
             }
         }

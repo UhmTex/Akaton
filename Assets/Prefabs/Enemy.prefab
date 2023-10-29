@@ -40825,6 +40825,9 @@ MonoBehaviour:
   WalkSpeed: 10
   ChaseSpeed: 6
   AgroSound: {fileID: 1224005890117213659}
+  RestartSound: {fileID: 0}
+  BackgroundMusic: {fileID: 0}
+  BackgroundSounds: {fileID: 0}
   WalkPoints:
   - {fileID: 9005351294867500964}
   - {fileID: 2845978246750595623}

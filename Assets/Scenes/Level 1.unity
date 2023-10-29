@@ -15481,9 +15481,21 @@ PrefabInstance:
       value: Start Crow
       objectReference: {fileID: 0}
     - target: {fileID: 8173200267936987717, guid: 05cee3fe4373dc042a6250dc5141bcd3, type: 3}
+      propertyPath: RestartSound
+      value: 
+      objectReference: {fileID: 1482540061}
+    - target: {fileID: 8173200267936987717, guid: 05cee3fe4373dc042a6250dc5141bcd3, type: 3}
       propertyPath: _deathScript
       value: 
       objectReference: {fileID: 262562862}
+    - target: {fileID: 8173200267936987717, guid: 05cee3fe4373dc042a6250dc5141bcd3, type: 3}
+      propertyPath: BackgroundMusic
+      value: 
+      objectReference: {fileID: 1658180412}
+    - target: {fileID: 8173200267936987717, guid: 05cee3fe4373dc042a6250dc5141bcd3, type: 3}
+      propertyPath: BackgroundSounds
+      value: 
+      objectReference: {fileID: 1658180411}
     - target: {fileID: 8741320556225393460, guid: 05cee3fe4373dc042a6250dc5141bcd3, type: 3}
       propertyPath: _deathScript
       value: 
@@ -21915,6 +21927,10 @@ PrefabInstance:
       propertyPath: _playersMovement
       value: 
       objectReference: {fileID: 487305374}
+    - target: {fileID: 3124888300255724042, guid: 69b9e0b2e17d7fa4198f279beb5065ee, type: 3}
+      propertyPath: m_Name
+      value: RestartSound
+      objectReference: {fileID: 0}
     - target: {fileID: 3881084286509621328, guid: 69b9e0b2e17d7fa4198f279beb5065ee, type: 3}
       propertyPath: m_SizeDelta.x
       value: 0
@@ -21983,6 +21999,11 @@ PrefabInstance:
       addedObject: {fileID: 1454434971}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 69b9e0b2e17d7fa4198f279beb5065ee, type: 3}
+--- !u!82 &1482540061 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 4944455648581759676, guid: 69b9e0b2e17d7fa4198f279beb5065ee, type: 3}
+  m_PrefabInstance: {fileID: 1482540060}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1482893268 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3965650138060002329, guid: c5a74388702bbaf4d8e36e9e6f6c5645, type: 3}
@@ -23439,9 +23460,21 @@ PrefabInstance:
       value: End Crow
       objectReference: {fileID: 0}
     - target: {fileID: 8173200267936987717, guid: 05cee3fe4373dc042a6250dc5141bcd3, type: 3}
+      propertyPath: RestartSound
+      value: 
+      objectReference: {fileID: 1482540061}
+    - target: {fileID: 8173200267936987717, guid: 05cee3fe4373dc042a6250dc5141bcd3, type: 3}
       propertyPath: _deathScript
       value: 
       objectReference: {fileID: 262562862}
+    - target: {fileID: 8173200267936987717, guid: 05cee3fe4373dc042a6250dc5141bcd3, type: 3}
+      propertyPath: BackgroundMusic
+      value: 
+      objectReference: {fileID: 1658180412}
+    - target: {fileID: 8173200267936987717, guid: 05cee3fe4373dc042a6250dc5141bcd3, type: 3}
+      propertyPath: BackgroundSounds
+      value: 
+      objectReference: {fileID: 1658180411}
     - target: {fileID: 8741320556225393460, guid: 05cee3fe4373dc042a6250dc5141bcd3, type: 3}
       propertyPath: _deathScript
       value: 
@@ -23989,6 +24022,73 @@ Transform:
 Transform:
   m_CorrespondingSourceObject: {fileID: 3082218875265755529, guid: 18a1ec5a135b2074d96f1d329d53108e, type: 3}
   m_PrefabInstance: {fileID: 105398830}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1658180410
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 7513539504176646598, guid: 14aeaa1b70e4f5d4ea53cc05cafbb8d2, type: 3}
+      propertyPath: m_Name
+      value: SoundsAndMusic
+      objectReference: {fileID: 0}
+    - target: {fileID: 7577292444640582502, guid: 14aeaa1b70e4f5d4ea53cc05cafbb8d2, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -39.486763
+      objectReference: {fileID: 0}
+    - target: {fileID: 7577292444640582502, guid: 14aeaa1b70e4f5d4ea53cc05cafbb8d2, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -256.01843
+      objectReference: {fileID: 0}
+    - target: {fileID: 7577292444640582502, guid: 14aeaa1b70e4f5d4ea53cc05cafbb8d2, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -224.5528
+      objectReference: {fileID: 0}
+    - target: {fileID: 7577292444640582502, guid: 14aeaa1b70e4f5d4ea53cc05cafbb8d2, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7577292444640582502, guid: 14aeaa1b70e4f5d4ea53cc05cafbb8d2, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7577292444640582502, guid: 14aeaa1b70e4f5d4ea53cc05cafbb8d2, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7577292444640582502, guid: 14aeaa1b70e4f5d4ea53cc05cafbb8d2, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7577292444640582502, guid: 14aeaa1b70e4f5d4ea53cc05cafbb8d2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7577292444640582502, guid: 14aeaa1b70e4f5d4ea53cc05cafbb8d2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7577292444640582502, guid: 14aeaa1b70e4f5d4ea53cc05cafbb8d2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 14aeaa1b70e4f5d4ea53cc05cafbb8d2, type: 3}
+--- !u!82 &1658180411 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 7998669790933678064, guid: 14aeaa1b70e4f5d4ea53cc05cafbb8d2, type: 3}
+  m_PrefabInstance: {fileID: 1658180410}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &1658180412 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 1447715617271525515, guid: 14aeaa1b70e4f5d4ea53cc05cafbb8d2, type: 3}
+  m_PrefabInstance: {fileID: 1658180410}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &1658504398 stripped
 Transform:
@@ -31544,3 +31644,4 @@ SceneRoots:
   - {fileID: 1401352324}
   - {fileID: 940060076}
   - {fileID: 1200715154}
+  - {fileID: 1658180410}

@@ -11,6 +11,9 @@ public class EnemyBehavior : MonoBehaviour
     public float ChaseSpeed = 6f;
 
     public AudioSource AgroSound;
+    public AudioSource RestartSound;
+    public AudioSource BackgroundMusic;
+    public AudioSource BackgroundSounds;
 
     public Transform[] WalkPoints;
     [SerializeField] int _numFound;
@@ -30,6 +33,7 @@ public class EnemyBehavior : MonoBehaviour
     private float aggroTimerCount = 3f;
     private float aggroTime = 0f;
     private bool _playedAgroSound = false;
+    private bool _playerIsDead = false;
 
     private void Start()
     {
@@ -39,46 +43,50 @@ public class EnemyBehavior : MonoBehaviour
 
     private void Update()
     {
-        if (aggroRemovedRecently)
+        if (!_playerIsDead)
         {
-            aggroTime += Time.deltaTime;
-
-            if (aggroTime > aggroTimerCount)
+            if (aggroRemovedRecently)
             {
-                aggroRemovedRecently = false;
-                aggroTime = 0f;
+                aggroTime += Time.deltaTime;
+
+                if (aggroTime > aggroTimerCount)
+                {
+                    aggroRemovedRecently = false;
+                    aggroTime = 0f;
+                }
             }
-        }
 
-        if (!aggroRemovedRecently) {
-            _numFound = Physics.OverlapSphereNonAlloc(_interactionPoint.position, _interactionPointRadius, _colliders, _interactableMask);
-        }
-
-
-        DetectAndAttack();
-        DeAggro();
-
-        if (!isPlayerDetected)
-        {
-            LookAt(CurrentWalkPoint);
-            transform.position = Vector3.MoveTowards(transform.position, CurrentWalkPoint.position, WalkSpeed * Time.deltaTime);
-
-            if (Vector3.Distance(transform.position, CurrentWalkPoint.position) < 1f)
+            if (!aggroRemovedRecently)
             {
-                CurrentWalkPoint = WalkPoints[Random.Range(0, WalkPoints.Length)];
+                _numFound = Physics.OverlapSphereNonAlloc(_interactionPoint.position, _interactionPointRadius, _colliders, _interactableMask);
             }
-        }
+
+            DetectAndAttack();
+            DeAggro();
+
+            if (!isPlayerDetected)
+            {
+                LookAt(CurrentWalkPoint);
+                transform.position = Vector3.MoveTowards(transform.position, CurrentWalkPoint.position, WalkSpeed * Time.deltaTime);
+
+                if (Vector3.Distance(transform.position, CurrentWalkPoint.position) < 1f)
+                {
+                    CurrentWalkPoint = WalkPoints[Random.Range(0, WalkPoints.Length)];
+                }
+            }
+        }    
     }
 
     private void DeAggro()
     {
         if (isPlayerDetected) {
             if (Vector3.Distance(_starterPos, _playerTarget.position) > 20f)
-            {
+            {             
+                AgroSound.Stop();
+                AgroSound.mute = true;     
                 isPlayerDetected = false;
                 aggroRemovedRecently = true;
-                AgroSound.mute = false;
-                _playedAgroSound = false;
+                _numFound = 0;
             }
         }
     }
@@ -111,19 +119,29 @@ public class EnemyBehavior : MonoBehaviour
                 }
                 else
                 {
+                    AgroSound.mute = true;
+                    AgroSound.Stop();
+                    BackgroundMusic.Stop();
+                    BackgroundSounds.Stop();
+                    RestartSound.Play();
                     _deathScript.PlayDeath();
-                    Debug.Log("Game Over");
+                    _playerIsDead = true;
                 }
             }
             else
             {
                 _playerTarget = null;
                 isPlayerDetected = false;
-                AgroSound.Stop();
+                _playedAgroSound = false;
+                AgroSound.mute = false;
             }
         }
         else
+        {
             isPlayerDetected = false;
+            _playedAgroSound = false;
+            AgroSound.mute = false;
+        }
     }
 
     private void OnDrawGizmos()
