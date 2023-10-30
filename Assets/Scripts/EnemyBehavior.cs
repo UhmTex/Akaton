@@ -21,6 +21,7 @@ public class EnemyBehavior : MonoBehaviour
     [SerializeField] float _interactionPointRadius = 1f;
     [SerializeField] LayerMask _interactableMask;
     [SerializeField] DeathScript _deathScript;
+    [SerializeField] Animator _animator;
 
     private readonly Collider[] _colliders = new Collider[3];
 
@@ -84,6 +85,7 @@ public class EnemyBehavior : MonoBehaviour
         if (isPlayerDetected) {
             if (Vector3.Distance(_starterPos, _playerTarget.position) > 20f)
             {
+                _animator.SetBool("isChasing", false);
                 StartCoroutine(Fade(false, AgroSound, 2f, 0f));
                 isPlayerDetected = false;
                 aggroRemovedRecently = true;
@@ -101,6 +103,7 @@ public class EnemyBehavior : MonoBehaviour
             {
                 if (!_playedAgroSound)
                 {
+                    _animator.SetBool("isChasing", true);
                     AgroSound.Play();
                     StartCoroutine(Fade(true, AgroSound, 2f, 0.3f));
 
