@@ -35,6 +35,8 @@ public class EnemyBehavior : MonoBehaviour
     private bool _playedAgroSound = false;
     private bool _playerIsDead = false;
 
+    private bool Aggrod = false;
+
     private void Start()
     {
         CurrentWalkPoint = WalkPoints[0];
@@ -81,9 +83,8 @@ public class EnemyBehavior : MonoBehaviour
     {
         if (isPlayerDetected) {
             if (Vector3.Distance(_starterPos, _playerTarget.position) > 20f)
-            {             
-                AgroSound.Stop();
-                AgroSound.mute = true;     
+            {
+                StartCoroutine(Fade(false, AgroSound, 2f, 0f));
                 isPlayerDetected = false;
                 aggroRemovedRecently = true;
                 _numFound = 0;
@@ -101,6 +102,8 @@ public class EnemyBehavior : MonoBehaviour
                 if (!_playedAgroSound)
                 {
                     AgroSound.Play();
+                    StartCoroutine(Fade(true, AgroSound, 2f, 0.3f));
+
                     _playedAgroSound = true;
                 }
 
@@ -119,8 +122,8 @@ public class EnemyBehavior : MonoBehaviour
                 }
                 else
                 {
-                    AgroSound.mute = true;
-                    AgroSound.Stop();
+                    //AgroSound.mute = true;
+                    //AgroSound.Stop();
                     BackgroundMusic.Stop();
                     BackgroundSounds.Stop();
                     RestartSound.Play();
@@ -164,5 +167,41 @@ public class EnemyBehavior : MonoBehaviour
 
         Quaternion rotation = Quaternion.LookRotation(relativePos, Vector3.up);
         transform.rotation = Quaternion.Slerp(transform.rotation, rotation, 5f * Time.deltaTime);
+    }
+
+    IEnumerator Fade(bool FadeIn, AudioSource source, float duration, float targetVolume)
+    {
+        if (FadeIn && !Aggrod)
+        {
+            Aggrod = true;
+
+            float time = 0f;
+            float startVolume = source.volume;
+
+            while (time < duration)
+            {
+                time += Time.deltaTime;
+                source.volume = Mathf.Lerp(startVolume, targetVolume, time / duration);
+                yield return null;
+            }
+
+            yield break;
+        }
+        else if (!FadeIn && Aggrod)
+        {
+            Aggrod = false;
+
+            float time = 0f;
+            float startVolume = source.volume;
+
+            while (time < duration)
+            {
+                time += Time.deltaTime;
+                source.volume = Mathf.Lerp(startVolume, targetVolume, time / duration);
+                yield return null;
+            }
+
+            yield break;
+        }
     }
 }
