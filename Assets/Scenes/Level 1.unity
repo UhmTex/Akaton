@@ -13727,7 +13727,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1182382321177146672, guid: 373c4f9c07979224d8187042b5435e78, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 1e-45
       objectReference: {fileID: 0}
     - target: {fileID: 1182382321177146672, guid: 373c4f9c07979224d8187042b5435e78, type: 3}
       propertyPath: m_LocalRotation.z
@@ -13759,11 +13759,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3246063526511111645, guid: 373c4f9c07979224d8187042b5435e78, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.000000018988336
+      value: -0.000000018988336
       objectReference: {fileID: 0}
     - target: {fileID: 3246063526511111645, guid: 373c4f9c07979224d8187042b5435e78, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.0000000030850345
+      value: 0.0000000030850345
       objectReference: {fileID: 0}
     - target: {fileID: 3345685535872610484, guid: 373c4f9c07979224d8187042b5435e78, type: 3}
       propertyPath: m_Name
@@ -15081,6 +15081,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Start Crow
       objectReference: {fileID: 0}
+    - target: {fileID: 2845978246750595623, guid: 05cee3fe4373dc042a6250dc5141bcd3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.13
+      objectReference: {fileID: 0}
+    - target: {fileID: 2845978246750595623, guid: 05cee3fe4373dc042a6250dc5141bcd3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 12.43
+      objectReference: {fileID: 0}
     - target: {fileID: 8173200267936987717, guid: 05cee3fe4373dc042a6250dc5141bcd3, type: 3}
       propertyPath: m_Enabled
       value: 1
@@ -15105,6 +15113,14 @@ PrefabInstance:
       propertyPath: _deathScript
       value: 
       objectReference: {fileID: 262562862}
+    - target: {fileID: 9005351294867500964, guid: 05cee3fe4373dc042a6250dc5141bcd3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -6.12
+      objectReference: {fileID: 0}
+    - target: {fileID: 9005351294867500964, guid: 05cee3fe4373dc042a6250dc5141bcd3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -4.94
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -22712,7 +22728,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 713049497438768149, guid: 05cee3fe4373dc042a6250dc5141bcd3, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 36.33
+      value: 11.38
       objectReference: {fileID: 0}
     - target: {fileID: 713049497438768149, guid: 05cee3fe4373dc042a6250dc5141bcd3, type: 3}
       propertyPath: m_LocalRotation.w
@@ -22746,6 +22762,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: End Crow
       objectReference: {fileID: 0}
+    - target: {fileID: 2845978246750595623, guid: 05cee3fe4373dc042a6250dc5141bcd3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -7.39
+      objectReference: {fileID: 0}
+    - target: {fileID: 2845978246750595623, guid: 05cee3fe4373dc042a6250dc5141bcd3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 6.24
+      objectReference: {fileID: 0}
     - target: {fileID: 8173200267936987717, guid: 05cee3fe4373dc042a6250dc5141bcd3, type: 3}
       propertyPath: m_Enabled
       value: 1
@@ -22770,6 +22794,14 @@ PrefabInstance:
       propertyPath: _deathScript
       value: 
       objectReference: {fileID: 262562862}
+    - target: {fileID: 9005351294867500964, guid: 05cee3fe4373dc042a6250dc5141bcd3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 6.35
+      objectReference: {fileID: 0}
+    - target: {fileID: 9005351294867500964, guid: 05cee3fe4373dc042a6250dc5141bcd3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -12.68
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
