@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
@@ -15,6 +16,10 @@ public class MovementHandler : MonoBehaviour
     public AudioSource WalkSFX;
     public AudioSource JumpSFX;
 
+    [SerializeField] LayerMask GroundLayer;
+    [SerializeField] GameObject GroundCheck;
+    [SerializeField] float GroundCheckRadius = 1f;
+
     [SerializeField] float MovementSpeed = 6;
     [SerializeField] float JumpHeight = 5;
 
@@ -22,7 +27,6 @@ public class MovementHandler : MonoBehaviour
     private bool isGrounded;
 
     private bool Jumped;
-
 
     // Movement Variables
     private float worldGravity;
@@ -51,7 +55,10 @@ public class MovementHandler : MonoBehaviour
             horizontal = Input.GetAxisRaw("Horizontal");
             vertical = Input.GetAxisRaw("Vertical");
 
-            isGrounded = CharController.isGrounded;
+            //isGrounded = CharController.isGrounded;
+            isGrounded = Physics.CheckSphere(GroundCheck.transform.position, GroundCheckRadius, GroundLayer);
+
+            print($"{isGrounded}, {playerVelocity}");
 
             direction = new Vector3(horizontal, 0, vertical).normalized;
 
@@ -82,7 +89,7 @@ public class MovementHandler : MonoBehaviour
             if (isGrounded && playerVelocity.y < 0)
             {
                 animator.SetBool("isJumping", false);
-                playerVelocity.y = 0f;
+                playerVelocity.y = -1f;
             }
 
             if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
@@ -130,5 +137,11 @@ public class MovementHandler : MonoBehaviour
             WalkSFX.Stop();
             JumpSFX.Stop();
         }
+    }
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawWireSphere(GroundCheck.transform.position, GroundCheckRadius);
     }
 }
