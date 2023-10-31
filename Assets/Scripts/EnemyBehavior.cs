@@ -11,6 +11,7 @@ public class EnemyBehavior : MonoBehaviour
     public float ChaseSpeed = 6f;
 
     public AudioSource AgroSound;
+    public AudioSource CawSound;
     public AudioSource RestartSound;
     public AudioSource BackgroundMusic;
     public AudioSource BackgroundSounds;
@@ -36,6 +37,12 @@ public class EnemyBehavior : MonoBehaviour
     private bool _playedAgroSound = false;
     private bool _playerIsDead = false;
 
+    private float randomGeneratorNumberCount = 5f;
+    private float randomGeneratorNumberTimer;
+
+    private float randomCawTimerCount;
+    private float cawTimer;
+
     private bool Aggrod = false;
 
     private void Start()
@@ -48,6 +55,14 @@ public class EnemyBehavior : MonoBehaviour
     {
         if (!_playerIsDead)
         {
+            randomGeneratorNumberTimer += Time.deltaTime;
+
+            if (randomGeneratorNumberTimer > randomGeneratorNumberCount)
+            {
+                randomCawTimerCount = Random.Range(5, 25);
+                randomGeneratorNumberTimer = 0;
+            }
+
             if (aggroRemovedRecently)
             {
                 aggroTime += Time.deltaTime;
@@ -69,6 +84,15 @@ public class EnemyBehavior : MonoBehaviour
 
             if (!isPlayerDetected)
             {
+                cawTimer += Time.deltaTime;
+
+                if (cawTimer > randomCawTimerCount)
+                {
+                    print(cawTimer);
+                    CawSound.Play();
+                    cawTimer = 0;
+                }
+
                 LookAt(CurrentWalkPoint);
                 transform.position = Vector3.MoveTowards(transform.position, CurrentWalkPoint.position, WalkSpeed * Time.deltaTime);
 

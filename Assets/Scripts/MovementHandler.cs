@@ -58,8 +58,6 @@ public class MovementHandler : MonoBehaviour
             //isGrounded = CharController.isGrounded;
             isGrounded = Physics.CheckSphere(GroundCheck.transform.position, GroundCheckRadius, GroundLayer);
 
-            print($"{isGrounded}, {playerVelocity}");
-
             direction = new Vector3(horizontal, 0, vertical).normalized;
 
             if (direction.magnitude > 0.1f)
