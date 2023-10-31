@@ -57,6 +57,7 @@ public class CrystalBehavior : MonoBehaviour
         isCollected = true;
 
         animator.Play("Explode");
+        transform.DORotate(new Vector3(0, 360, 0), 2.5f, RotateMode.FastBeyond360).SetRelative(true).SetEase(Ease.InOutSine, 7, 2);
     }
 
     public void AbsorbShards()

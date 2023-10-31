@@ -59,7 +59,7 @@ public class EnemyBehavior : MonoBehaviour
 
             if (randomGeneratorNumberTimer > randomGeneratorNumberCount)
             {
-                randomCawTimerCount = Random.Range(5, 25);
+                randomCawTimerCount = Random.Range(10, 35);
                 randomGeneratorNumberTimer = 0;
             }
 
@@ -153,6 +153,8 @@ public class EnemyBehavior : MonoBehaviour
                     //AgroSound.Stop();
                     BackgroundMusic.Stop();
                     BackgroundSounds.Stop();
+                    AgroSound.Stop();
+                    CawSound.Stop();
                     RestartSound.Play();
                     _deathScript.PlayDeath();
                     _playerIsDead = true;

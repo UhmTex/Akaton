@@ -11,6 +11,7 @@ public class PickupScript : MonoBehaviour
     [SerializeField] LayerMask _interactableMask;
     [SerializeField] InteractionPromtUI _interactionDisplay;
     [SerializeField] FadeScript _nextLevelCanvas;
+    [SerializeField] AudioSource _Interaction_SFX;
     private bool _eWasPressed = false;
     private float _timerForNextScene = 2;
     private float _timerForFade = 2f;
@@ -30,8 +31,11 @@ public class PickupScript : MonoBehaviour
             {
                 _interactionDisplay.SetUp("E");
                 interactable.GetComponent<InteractableObjectScript>().Interact();
-                if (Input.GetKeyDown(KeyCode.E)) 
+                if (Input.GetKeyDown(KeyCode.E))
+                {
                     _eWasPressed = true;
+                    _Interaction_SFX.Play();
+                } 
                 if (_eWasPressed && _timerForNextScene != 0)
                     _timerForNextScene -= Time.deltaTime;
                 if (_timerForNextScene <= 0)
