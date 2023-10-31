@@ -30872,6 +30872,10 @@ PrefabInstance:
       propertyPath: m_CullingMask.m_Bits
       value: 768
       objectReference: {fileID: 0}
+    - target: {fileID: 6797033737639925527, guid: 2e6da8c16c2a74c4990bcb20aa360a08, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8690007478572507736, guid: 2e6da8c16c2a74c4990bcb20aa360a08, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0
