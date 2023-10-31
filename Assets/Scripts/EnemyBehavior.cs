@@ -88,7 +88,7 @@ public class EnemyBehavior : MonoBehaviour
 
                 if (cawTimer > randomCawTimerCount)
                 {
-                    print(cawTimer);
+                    //print(cawTimer);
                     CawSound.Play();
                     cawTimer = 0;
                 }

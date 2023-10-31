@@ -8,27 +8,42 @@ public class LightningBehavior : MonoBehaviour
 {
     [SerializeField] private VisualEffect lightningEffect;
 
+    public Transform[] RandomSpawns;
+
     public GameObject Wrapper;
 
     public ParticleSystem Lightning_Windup;
     public ParticleSystem Lightning_Explosion;
     public ParticleSystem Lightning_Residue;
 
-    public ParticleSystem test;
-
-    private Vector3 lightningPos;
 
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.T))
         {
+            Transform spawnPlane = RandomSpawns[Random.Range(0, RandomSpawns.Length)];
+
+            Vector3 spawnPos = GetRandomPos(spawnPlane);
+
+            print(spawnPos);
+
+            Wrapper.transform.position = spawnPos;
+
             StartCoroutine("LightningFull");
         }
+    }
 
-        if (Input.GetKeyDown(KeyCode.Q)) 
-        {
-            test.Play();
-        }
+    public Vector3 GetRandomPos(Transform obj)
+    {
+        Mesh planeMesh = obj.GetComponent<MeshFilter>().mesh;
+        Bounds bounds = planeMesh.bounds;
+
+        float minX = obj.position.x - obj.localScale.x * bounds.size.x * 0.5f;
+        float minZ = obj.position.z - obj.localScale.z * bounds.size.z * 0.5f;
+
+        Vector3 newVec = new Vector3(Random.Range(minX, -minX), obj.position.y, Random.Range(minZ, -minZ));
+
+        return newVec;
     }
 
     IEnumerator LightningFull()
