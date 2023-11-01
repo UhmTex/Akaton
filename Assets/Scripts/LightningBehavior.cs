@@ -24,6 +24,8 @@ public class LightningBehavior : MonoBehaviour
 
     IEnumerator LightningFull()
     {
+        yield return new WaitForSecondsRealtime(Random.Range(1, 4));
+
         while (true)
         {
             Wrapper.transform.position = RandomSpawns[Random.Range(0, RandomSpawns.Length)].position;
