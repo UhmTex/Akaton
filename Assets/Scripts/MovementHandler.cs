@@ -16,6 +16,8 @@ public class MovementHandler : MonoBehaviour
     public AudioSource WalkSFX;
     public AudioSource JumpSFX;
 
+    public GameObject SprintParticles;
+
     [SerializeField] LayerMask GroundLayer;
     [SerializeField] GameObject GroundCheck;
     [SerializeField] float GroundCheckRadius = 1f;
@@ -108,6 +110,15 @@ public class MovementHandler : MonoBehaviour
 
             if (Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift))
             {
+                if (isGrounded)
+                {
+                    SprintParticles.SetActive(true);
+                } 
+                else
+                {
+                    SprintParticles.SetActive(false);
+                }
+
                 animator.SetBool("isSprinting", true);
                 WalkSFX.Stop();
                 
@@ -121,6 +132,7 @@ public class MovementHandler : MonoBehaviour
 
             if (Input.GetKeyUp(KeyCode.LeftShift) || Input.GetKeyUp(KeyCode.RightShift))
             {
+                SprintParticles.SetActive(false);
                 animator.SetBool("isSprinting", false);
                 SprintSFX.Stop();
                 sprintBonus = 0;
