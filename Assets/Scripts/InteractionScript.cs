@@ -16,7 +16,7 @@ public class PickupScript : MonoBehaviour
     private bool _eWasPressed = false;
     private bool _wasFaded = false;
     private float _timerForNextScene = 2f;
-    private float _timerForFade = 10f;
+    private float _timerForFade = 12f;
 
     int _numFound;
 
