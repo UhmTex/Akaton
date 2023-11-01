@@ -5885,11 +5885,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8510548464217165272, guid: 64e5b6dd9cbce6440a5bdb4e86f22985, type: 3}
       propertyPath: TriggerModule.radiusScale
-      value: 5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8510548464217165272, guid: 64e5b6dd9cbce6440a5bdb4e86f22985, type: 3}
       propertyPath: TriggerModule.colliderQueryMode
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8510548464217165272, guid: 64e5b6dd9cbce6440a5bdb4e86f22985, type: 3}
       propertyPath: TriggerModule.primitives.Array.data[0]
@@ -20187,7 +20187,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1182382321177146672, guid: 373c4f9c07979224d8187042b5435e78, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 1e-45
       objectReference: {fileID: 0}
     - target: {fileID: 1182382321177146672, guid: 373c4f9c07979224d8187042b5435e78, type: 3}
       propertyPath: m_LocalRotation.z
