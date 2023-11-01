@@ -42,7 +42,7 @@ public class LightningBehavior : MonoBehaviour
 
             Lightning_Explosion.Stop();
 
-            yield return new WaitForSecondsRealtime(3);
+            yield return new WaitForSecondsRealtime(1);
         }
     }
 }
