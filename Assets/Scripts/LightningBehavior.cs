@@ -17,61 +17,32 @@ public class LightningBehavior : MonoBehaviour
     public ParticleSystem Lightning_Residue;
 
 
-    private void Update()
+    private void Start()
     {
-        if (Input.GetKeyDown(KeyCode.T))
-        {
-            Transform spawnPlane = RandomSpawns[Random.Range(0, RandomSpawns.Length)];
-
-            Vector3 spawnPos = GetRandomPos(spawnPlane);
-
-            print(spawnPos);
-
-            Wrapper.transform.position = spawnPos;
-
-            StartCoroutine("LightningFull");
-        }
-    }
-
-    public Vector3 GetRandomPos(Transform obj)
-    {
-        Mesh planeMesh = obj.GetComponent<MeshFilter>().mesh;
-        Bounds bounds = planeMesh.bounds;
-
-        float minX = obj.position.x - obj.localScale.x * bounds.size.x * 0.5f;
-        float minZ = obj.position.z - obj.localScale.z * bounds.size.z * 0.5f;
-
-        Vector3 newVec = new Vector3(Random.Range(minX, -minX), obj.position.y, Random.Range(minZ, -minZ));
-
-        return newVec;
+        StartCoroutine("LightningFull");
     }
 
     IEnumerator LightningFull()
     {
-        var randomVector3 = new Vector3(Random.Range(-5, 5), 1, Random.Range(-5, 5));
+        while (true)
+        {
+            Wrapper.transform.position = RandomSpawns[Random.Range(0, RandomSpawns.Length)].position;
 
-        Wrapper.SetActive(true);
+            Lightning_Windup.Play();
 
-        Wrapper.transform.position = randomVector3;
+            yield return new WaitForSeconds(5.3f);
 
-        Lightning_Windup.Play();
+            lightningEffect.Play();
+            Lightning_Residue.Play();
 
-        yield return new WaitForSeconds(5.3f);
+            Lightning_Explosion.Play();
+            Lightning_Windup.Stop();
 
-        lightningEffect.SetVector3("SendPos", randomVector3);
-        lightningEffect.Play();
+            yield return new WaitForSeconds(1f);
 
-        Lightning_Explosion.Play();
-        Lightning_Windup.Stop();
+            Lightning_Explosion.Stop();
 
-        yield return new WaitForSeconds(1f);
-
-        Lightning_Explosion.Stop();
-
-        yield return new WaitForSeconds(1f);
-
-        Lightning_Residue.Play();
-
-        Wrapper.SetActive(false);
+            yield return new WaitForSecondsRealtime(3);
+        }
     }
 }
