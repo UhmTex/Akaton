@@ -55,6 +55,13 @@ public class FadeScript : MonoBehaviour
                     _uIGroup.alpha += Time.deltaTime;
                     if (_uIGroup.alpha >= 1)
                     {
+                        if (SceneManager.GetActiveScene().buildIndex == 1)
+                            _uIGroupSister.alpha = 1f;
+                        else if(SceneManager.GetActiveScene().buildIndex == 2)
+                        {
+                            _uIGroupSister.alpha = 1f;
+                            _uIGroupMother.alpha = 1f;
+                        }
                         _uIGroupThePicture.alpha += 0.3f * Time.deltaTime;
                         if (_uIGroupThePicture.alpha >= 1)
                         {
@@ -69,7 +76,7 @@ public class FadeScript : MonoBehaviour
                                 }
                             }
                             else if (SceneManager.GetActiveScene().buildIndex == 1)
-                            {
+                            {                             
                                 _uIGroupMother.alpha += (0.3f * Time.deltaTime);
 
                                 if (_uIGroupMother.alpha >= 1)
@@ -85,7 +92,6 @@ public class FadeScript : MonoBehaviour
                                 if (_uIGroupFather.alpha >= 1)
                                 {
                                     fadeIn = false;
-                                    _thePictureFade = true;
                                 }
                             }
                         }
