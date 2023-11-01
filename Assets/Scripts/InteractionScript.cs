@@ -14,6 +14,7 @@ public class PickupScript : MonoBehaviour
     [SerializeField] AudioSource _Interaction_SFX;
     [SerializeField] DeathScript _deathScript;
     [SerializeField] LightningBehavior[] _lightnings;
+    [SerializeField] MovementHandler _movement;
     private bool _eWasPressed = false;
     private float _timerForNextScene = 2f;
     private float _timerForFade = 12f;
@@ -33,9 +34,10 @@ public class PickupScript : MonoBehaviour
             {
                 _interactionDisplay.SetUp("E");
                 interactable.GetComponent<InteractableObjectScript>().Interact();
-                if (Input.GetKeyDown(KeyCode.E))
+                if (Input.GetKeyDown(KeyCode.E) && !_eWasPressed)
                 {
                     _eWasPressed = true;
+                    _movement.PlayerIsDead = true;
                     _Interaction_SFX.Play();
                     foreach(LightningBehavior lightning in _lightnings)
                     {

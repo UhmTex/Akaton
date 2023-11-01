@@ -20468,6 +20468,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 534174085063629400, guid: 373c4f9c07979224d8187042b5435e78, type: 3}
+      propertyPath: _movement
+      value: 
+      objectReference: {fileID: 487305374}
+    - target: {fileID: 534174085063629400, guid: 373c4f9c07979224d8187042b5435e78, type: 3}
       propertyPath: _deathScript
       value: 
       objectReference: {fileID: 262562862}
@@ -20549,11 +20553,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3246063526511111645, guid: 373c4f9c07979224d8187042b5435e78, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.000000018988336
+      value: -0.000000018988336
       objectReference: {fileID: 0}
     - target: {fileID: 3246063526511111645, guid: 373c4f9c07979224d8187042b5435e78, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.0000000030850345
+      value: 0.0000000030850345
       objectReference: {fileID: 0}
     - target: {fileID: 3345685535872610484, guid: 373c4f9c07979224d8187042b5435e78, type: 3}
       propertyPath: m_Name
