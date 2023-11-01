@@ -2154,6 +2154,37 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 18a1ec5a135b2074d96f1d329d53108e, type: 3}
+--- !u!1 &106185799
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 106185800}
+  m_Layer: 0
+  m_Name: LightningSpot 11
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &106185800
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 106185799}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -13.39, y: -4.21, z: 12.7}
+  m_LocalScale: {x: 0.3636, y: 0.3636, z: 0.3636}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 815337867}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &107019509 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4028357392751601997, guid: 5edbf2b22446f1440bd3047f3646d7fa, type: 3}
@@ -2374,6 +2405,37 @@ Transform:
   m_Children:
   - {fileID: 289350531}
   m_Father: {fileID: 2064874348}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &119333426
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 119333427}
+  m_Layer: 0
+  m_Name: LightningSpot 1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &119333427
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 119333426}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 2.02, y: -4.21, z: 0}
+  m_LocalScale: {x: 0.3636, y: 0.3636, z: 0.3636}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 815337867}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &120937699 stripped
 Transform:
@@ -4400,6 +4462,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3082218875265755529, guid: 18a1ec5a135b2074d96f1d329d53108e, type: 3}
   m_PrefabInstance: {fileID: 568512385}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &231156944
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 231156945}
+  m_Layer: 0
+  m_Name: LightningSpot 3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &231156945
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 231156944}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: -3.941, z: 27.37}
+  m_LocalScale: {x: 0.3636, y: 0.3636, z: 0.3636}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 815337867}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &235950853 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8774538362240027727, guid: 95a8a70dfed48e145827005d92e5bd40, type: 3}
@@ -5666,6 +5759,139 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b11704d4e0843594f8d8df47ac4504b7, type: 3}
+--- !u!1001 &301114333
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 218234573317448558, guid: 64e5b6dd9cbce6440a5bdb4e86f22985, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -13.16
+      objectReference: {fileID: 0}
+    - target: {fileID: 218234573317448558, guid: 64e5b6dd9cbce6440a5bdb4e86f22985, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.44
+      objectReference: {fileID: 0}
+    - target: {fileID: 218234573317448558, guid: 64e5b6dd9cbce6440a5bdb4e86f22985, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -15.57
+      objectReference: {fileID: 0}
+    - target: {fileID: 218234573317448558, guid: 64e5b6dd9cbce6440a5bdb4e86f22985, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 218234573317448558, guid: 64e5b6dd9cbce6440a5bdb4e86f22985, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 218234573317448558, guid: 64e5b6dd9cbce6440a5bdb4e86f22985, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 218234573317448558, guid: 64e5b6dd9cbce6440a5bdb4e86f22985, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 218234573317448558, guid: 64e5b6dd9cbce6440a5bdb4e86f22985, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 218234573317448558, guid: 64e5b6dd9cbce6440a5bdb4e86f22985, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 218234573317448558, guid: 64e5b6dd9cbce6440a5bdb4e86f22985, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1522121545329817472, guid: 64e5b6dd9cbce6440a5bdb4e86f22985, type: 3}
+      propertyPath: RandomSpawns.Array.size
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 1522121545329817472, guid: 64e5b6dd9cbce6440a5bdb4e86f22985, type: 3}
+      propertyPath: RandomSpawns.Array.data[0]
+      value: 
+      objectReference: {fileID: 119333427}
+    - target: {fileID: 1522121545329817472, guid: 64e5b6dd9cbce6440a5bdb4e86f22985, type: 3}
+      propertyPath: RandomSpawns.Array.data[1]
+      value: 
+      objectReference: {fileID: 542040312}
+    - target: {fileID: 1522121545329817472, guid: 64e5b6dd9cbce6440a5bdb4e86f22985, type: 3}
+      propertyPath: RandomSpawns.Array.data[2]
+      value: 
+      objectReference: {fileID: 231156945}
+    - target: {fileID: 1522121545329817472, guid: 64e5b6dd9cbce6440a5bdb4e86f22985, type: 3}
+      propertyPath: RandomSpawns.Array.data[3]
+      value: 
+      objectReference: {fileID: 345353389}
+    - target: {fileID: 1522121545329817472, guid: 64e5b6dd9cbce6440a5bdb4e86f22985, type: 3}
+      propertyPath: RandomSpawns.Array.data[4]
+      value: 
+      objectReference: {fileID: 1893000642}
+    - target: {fileID: 1522121545329817472, guid: 64e5b6dd9cbce6440a5bdb4e86f22985, type: 3}
+      propertyPath: RandomSpawns.Array.data[5]
+      value: 
+      objectReference: {fileID: 1336956593}
+    - target: {fileID: 1522121545329817472, guid: 64e5b6dd9cbce6440a5bdb4e86f22985, type: 3}
+      propertyPath: RandomSpawns.Array.data[6]
+      value: 
+      objectReference: {fileID: 2021788280}
+    - target: {fileID: 1522121545329817472, guid: 64e5b6dd9cbce6440a5bdb4e86f22985, type: 3}
+      propertyPath: RandomSpawns.Array.data[7]
+      value: 
+      objectReference: {fileID: 1785846406}
+    - target: {fileID: 1522121545329817472, guid: 64e5b6dd9cbce6440a5bdb4e86f22985, type: 3}
+      propertyPath: RandomSpawns.Array.data[8]
+      value: 
+      objectReference: {fileID: 1331817438}
+    - target: {fileID: 1522121545329817472, guid: 64e5b6dd9cbce6440a5bdb4e86f22985, type: 3}
+      propertyPath: RandomSpawns.Array.data[9]
+      value: 
+      objectReference: {fileID: 1156977329}
+    - target: {fileID: 1522121545329817472, guid: 64e5b6dd9cbce6440a5bdb4e86f22985, type: 3}
+      propertyPath: RandomSpawns.Array.data[10]
+      value: 
+      objectReference: {fileID: 106185800}
+    - target: {fileID: 1522121545329817472, guid: 64e5b6dd9cbce6440a5bdb4e86f22985, type: 3}
+      propertyPath: RandomSpawns.Array.data[11]
+      value: 
+      objectReference: {fileID: 1201168342}
+    - target: {fileID: 1522121545329817472, guid: 64e5b6dd9cbce6440a5bdb4e86f22985, type: 3}
+      propertyPath: RandomSpawns.Array.data[12]
+      value: 
+      objectReference: {fileID: 1021014924}
+    - target: {fileID: 1522121545329817472, guid: 64e5b6dd9cbce6440a5bdb4e86f22985, type: 3}
+      propertyPath: RandomSpawns.Array.data[13]
+      value: 
+      objectReference: {fileID: 1628733084}
+    - target: {fileID: 1522121545329817472, guid: 64e5b6dd9cbce6440a5bdb4e86f22985, type: 3}
+      propertyPath: RandomSpawns.Array.data[14]
+      value: 
+      objectReference: {fileID: 1191585684}
+    - target: {fileID: 8454450916512727599, guid: 64e5b6dd9cbce6440a5bdb4e86f22985, type: 3}
+      propertyPath: InitialModule.startLifetime.minScalar
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8454450916512727599, guid: 64e5b6dd9cbce6440a5bdb4e86f22985, type: 3}
+      propertyPath: InitialModule.startLifetime.minMaxState
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8510548464217165272, guid: 64e5b6dd9cbce6440a5bdb4e86f22985, type: 3}
+      propertyPath: TriggerModule.primitives.Array.data[0]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8571222953182440644, guid: 64e5b6dd9cbce6440a5bdb4e86f22985, type: 3}
+      propertyPath: m_Name
+      value: LightningParticles
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 64e5b6dd9cbce6440a5bdb4e86f22985, type: 3}
 --- !u!4 &302599927 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3965650138060002329, guid: c5a74388702bbaf4d8e36e9e6f6c5645, type: 3}
@@ -6570,6 +6796,37 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c5a74388702bbaf4d8e36e9e6f6c5645, type: 3}
+--- !u!1 &345353388
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 345353389}
+  m_Layer: 0
+  m_Name: LightningSpot 4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &345353389
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 345353388}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -16.32, y: -4.29, z: 27.37}
+  m_LocalScale: {x: 0.3636, y: 0.3636, z: 0.3636}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 815337867}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &346165413 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6425814165663124164, guid: b11704d4e0843594f8d8df47ac4504b7, type: 3}
@@ -10026,6 +10283,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3071747708022981794, guid: 06d07ce28138a2148ba20e0055e73acc, type: 3}
   m_PrefabInstance: {fileID: 217000357}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &542040311
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 542040312}
+  m_Layer: 0
+  m_Name: LightningSpot 2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &542040312
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 542040311}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -12.842, y: -6.143, z: -13.975}
+  m_LocalScale: {x: 0.3636, y: 0.3636, z: 0.3636}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 815337867}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &545820552
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14912,6 +15200,52 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4451540408347593938, guid: 8e89d750aed0ef84a81aefab889cbf8a, type: 3}
   m_PrefabInstance: {fileID: 67693619}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &815337866
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 815337867}
+  m_Layer: 0
+  m_Name: LightningSpots
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &815337867
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 815337866}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 7.64, y: 2.107, z: -12.71052}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1156977329}
+  - {fileID: 106185800}
+  - {fileID: 1201168342}
+  - {fileID: 1021014924}
+  - {fileID: 1628733084}
+  - {fileID: 1191585684}
+  - {fileID: 119333427}
+  - {fileID: 542040312}
+  - {fileID: 231156945}
+  - {fileID: 345353389}
+  - {fileID: 1893000642}
+  - {fileID: 1336956593}
+  - {fileID: 2021788280}
+  - {fileID: 1785846406}
+  - {fileID: 1331817438}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &820664707
 GameObject:
   m_ObjectHideFlags: 0
@@ -20252,6 +20586,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8077645277149771525, guid: cdd4d3c65026ba94aaa2fd47b4d2b4b5, type: 3}
   m_PrefabInstance: {fileID: 573781005}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1021014923
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1021014924}
+  m_Layer: 0
+  m_Name: LightningSpot 13
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1021014924
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1021014923}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -11.6, y: -5.565, z: 44.52}
+  m_LocalScale: {x: 0.3636, y: 0.3636, z: 0.3636}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 815337867}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1025176963
 GameObject:
   m_ObjectHideFlags: 0
@@ -23639,6 +24004,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4451540408347593938, guid: 8e89d750aed0ef84a81aefab889cbf8a, type: 3}
   m_PrefabInstance: {fileID: 1428138893}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1156977328
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1156977329}
+  m_Layer: 0
+  m_Name: LightningSpot 10
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1156977329
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1156977328}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1.62, y: -3.99, z: 10.9}
+  m_LocalScale: {x: 0.3636, y: 0.3636, z: 0.3636}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 815337867}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1157112249
 GameObject:
   m_ObjectHideFlags: 0
@@ -24409,6 +24805,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8774538362240027727, guid: 95a8a70dfed48e145827005d92e5bd40, type: 3}
   m_PrefabInstance: {fileID: 407073593}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1191585683
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1191585684}
+  m_Layer: 0
+  m_Name: LightningSpot 15
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1191585684
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1191585683}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -7.73, y: -5.279, z: -4.803}
+  m_LocalScale: {x: 0.3636, y: 0.3636, z: 0.3636}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 815337867}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1191595338 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6425814165663124164, guid: b11704d4e0843594f8d8df47ac4504b7, type: 3}
@@ -24639,6 +25066,37 @@ Transform:
   - {fileID: 74294260}
   - {fileID: 1834209075}
   m_Father: {fileID: 1472434928}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1201168341
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1201168342}
+  m_Layer: 0
+  m_Name: LightningSpot 12
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1201168342
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1201168341}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -10.09, y: -4.7, z: 2.07}
+  m_LocalScale: {x: 0.3636, y: 0.3636, z: 0.3636}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 815337867}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1201247088 stripped
 Transform:
@@ -27229,11 +27687,73 @@ Transform:
   - {fileID: 1035301569}
   m_Father: {fileID: 1683706469}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1331817437
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1331817438}
+  m_Layer: 0
+  m_Name: LightningSpot 9
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1331817438
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1331817437}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -14.86, y: -5.17, z: -34.41}
+  m_LocalScale: {x: 0.3636, y: 0.3636, z: 0.3636}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 815337867}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1334234143 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7730087454981640080, guid: 4d348e640bd121b4d873587b6c568d85, type: 3}
   m_PrefabInstance: {fileID: 184968729}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1336956592
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1336956593}
+  m_Layer: 0
+  m_Name: LightningSpot 6
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1336956593
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1336956592}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -12.104267, y: -5.639, z: -4.23}
+  m_LocalScale: {x: 0.3636, y: 0.3636, z: 0.3636}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 815337867}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1337413695 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3965650138060002329, guid: c5a74388702bbaf4d8e36e9e6f6c5645, type: 3}
@@ -33434,6 +33954,37 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c5a74388702bbaf4d8e36e9e6f6c5645, type: 3}
+--- !u!1 &1628733083
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1628733084}
+  m_Layer: 0
+  m_Name: LightningSpot 14
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1628733084
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1628733083}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.33, y: -3.924, z: 30.59}
+  m_LocalScale: {x: 0.3636, y: 0.3636, z: 0.3636}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 815337867}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1628855140
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -36339,6 +36890,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4028357392751601997, guid: 5edbf2b22446f1440bd3047f3646d7fa, type: 3}
   m_PrefabInstance: {fileID: 546394396}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1785846405
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1785846406}
+  m_Layer: 0
+  m_Name: LightningSpot 8
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1785846406
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1785846405}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 9, y: -1.66, z: -23.26}
+  m_LocalScale: {x: 0.3636, y: 0.3636, z: 0.3636}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 815337867}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1787538346
 GameObject:
   m_ObjectHideFlags: 0
@@ -38768,6 +39350,37 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 95a8a70dfed48e145827005d92e5bd40, type: 3}
+--- !u!1 &1893000641
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1893000642}
+  m_Layer: 0
+  m_Name: LightningSpot 5
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1893000642
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1893000641}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -13.43, y: -3.968, z: 12.19}
+  m_LocalScale: {x: 0.3636, y: 0.3636, z: 0.3636}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 815337867}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1893532260
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -42083,6 +42696,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2021788279
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2021788280}
+  m_Layer: 0
+  m_Name: LightningSpot 7
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2021788280
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2021788279}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -11.9, y: -5.498, z: -45.86}
+  m_LocalScale: {x: 0.3636, y: 0.3636, z: 0.3636}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 815337867}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2024752373
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -44664,3 +45308,5 @@ SceneRoots:
   - {fileID: 1658180410}
   - {fileID: 2020789053}
   - {fileID: 1085438854}
+  - {fileID: 815337867}
+  - {fileID: 301114333}

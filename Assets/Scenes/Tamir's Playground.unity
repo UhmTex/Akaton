@@ -3782,11 +3782,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3246063526511111645, guid: 373c4f9c07979224d8187042b5435e78, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.000000018988336
+      value: 0.000000018988336
       objectReference: {fileID: 0}
     - target: {fileID: 3246063526511111645, guid: 373c4f9c07979224d8187042b5435e78, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.0000000030850345
+      value: -0.0000000030850345
       objectReference: {fileID: 0}
     - target: {fileID: 3257636855471063684, guid: 373c4f9c07979224d8187042b5435e78, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -6403,6 +6403,14 @@ PrefabInstance:
       propertyPath: RandomSpawns.Array.data[2]
       value: 
       objectReference: {fileID: 156055945}
+    - target: {fileID: 8454450916512727599, guid: 64e5b6dd9cbce6440a5bdb4e86f22985, type: 3}
+      propertyPath: InitialModule.startLifetime.minScalar
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8454450916512727599, guid: 64e5b6dd9cbce6440a5bdb4e86f22985, type: 3}
+      propertyPath: InitialModule.startLifetime.minMaxState
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8510548464217165272, guid: 64e5b6dd9cbce6440a5bdb4e86f22985, type: 3}
       propertyPath: TriggerModule.primitives.Array.data[0]
       value: 
