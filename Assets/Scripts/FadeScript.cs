@@ -13,6 +13,7 @@ public class FadeScript : MonoBehaviour
     [SerializeField] private bool fadeIn = false;
     [SerializeField] private bool fadeOut = false;
     private bool _thePictureFade = false;
+    private float _fadeOutTimer = 2f;
 
     public void FadeIn()
     {
@@ -55,9 +56,9 @@ public class FadeScript : MonoBehaviour
                     _uIGroup.alpha += Time.deltaTime;
                     if (_uIGroup.alpha >= 1)
                     {
-                        if (SceneManager.GetActiveScene().buildIndex == 1)
+                        if (SceneManager.GetActiveScene().buildIndex == 2)
                             _uIGroupSister.alpha = 1f;
-                        else if(SceneManager.GetActiveScene().buildIndex == 2)
+                        else if(SceneManager.GetActiveScene().buildIndex == 3)
                         {
                             _uIGroupSister.alpha = 1f;
                             _uIGroupMother.alpha = 1f;
@@ -71,8 +72,12 @@ public class FadeScript : MonoBehaviour
 
                                 if (_uIGroupSister.alpha >= 1)
                                 {
-                                    fadeIn = false;
-                                    _thePictureFade = true;
+                                    _fadeOutTimer -= Time.deltaTime;
+                                    if (_fadeOutTimer <= 0)
+                                    {
+                                        fadeIn = false;
+                                        _thePictureFade = true;
+                                    }
                                 }
                             }
                             else if (SceneManager.GetActiveScene().buildIndex == 2)
@@ -81,8 +86,12 @@ public class FadeScript : MonoBehaviour
 
                                 if (_uIGroupMother.alpha >= 1)
                                 {
-                                    fadeIn = false;
-                                    _thePictureFade = true;
+                                    _fadeOutTimer -= Time.deltaTime;
+                                    if (_fadeOutTimer <= 0)
+                                    {
+                                        fadeIn = false;
+                                        _thePictureFade = true;
+                                    }
                                 }
                             }
                             else
