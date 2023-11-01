@@ -16885,6 +16885,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 893633100144850406, guid: 2e6da8c16c2a74c4990bcb20aa360a08, type: 3}
+      propertyPath: m_CullingMask.m_Bits
+      value: 2816
+      objectReference: {fileID: 0}
+    - target: {fileID: 961741491628545589, guid: 2e6da8c16c2a74c4990bcb20aa360a08, type: 3}
+      propertyPath: m_CullingMask.m_Bits
+      value: 2816
+      objectReference: {fileID: 0}
+    - target: {fileID: 2651688333327902341, guid: 2e6da8c16c2a74c4990bcb20aa360a08, type: 3}
+      propertyPath: m_CullingMask.m_Bits
+      value: 2816
+      objectReference: {fileID: 0}
+    - target: {fileID: 4551073122832502883, guid: 2e6da8c16c2a74c4990bcb20aa360a08, type: 3}
+      propertyPath: m_CullingMask.m_Bits
+      value: 2816
+      objectReference: {fileID: 0}
     - target: {fileID: 6797033737639925527, guid: 2e6da8c16c2a74c4990bcb20aa360a08, type: 3}
       propertyPath: weight
       value: 1
@@ -18425,11 +18441,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3246063526511111645, guid: 373c4f9c07979224d8187042b5435e78, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.000000018988336
+      value: -0.000000018988336
       objectReference: {fileID: 0}
     - target: {fileID: 3246063526511111645, guid: 373c4f9c07979224d8187042b5435e78, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.0000000030850345
+      value: 0.0000000030850345
       objectReference: {fileID: 0}
     - target: {fileID: 3345685535872610484, guid: 373c4f9c07979224d8187042b5435e78, type: 3}
       propertyPath: m_Name
