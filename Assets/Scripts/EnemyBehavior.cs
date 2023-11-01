@@ -17,6 +17,7 @@ public class EnemyBehavior : MonoBehaviour
     public AudioSource BackgroundSounds;
 
     public Transform[] WalkPoints;
+    public bool _playerIsDead = false;
     [SerializeField] int _numFound;
     [SerializeField] Transform _interactionPoint;
     [SerializeField] float _interactionPointRadius = 1f;
@@ -35,11 +36,10 @@ public class EnemyBehavior : MonoBehaviour
     private float aggroTimerCount = 3f;
     private float aggroTime = 0f;
     private bool _playedAgroSound = false;
-    private bool _playerIsDead = false;
+
 
     private float randomGeneratorNumberCount = 5f;
     private float randomGeneratorNumberTimer;
-
     private float randomCawTimerCount;
     private float cawTimer;
 
@@ -100,7 +100,11 @@ public class EnemyBehavior : MonoBehaviour
                     CurrentWalkPoint = WalkPoints[Random.Range(0, WalkPoints.Length)];
                 }
             }
-        }    
+        }
+        else
+        {
+            AgroSound.Stop();
+        }
     }
 
     private void DeAggro()
