@@ -5,9 +5,9 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/Scenes/Ilia's Playground.unity
-    guid: 86d6b940004aafd418c75cfcfa935cee
+  - enabled: 1
+    path: Assets/Scenes/MenuScene.unity
+    guid: dace6f83cf7ccc4449621a6abe199f80
   - enabled: 1
     path: Assets/Scenes/Level 1.unity
     guid: eda2a3637328dd3498c462aa97364b70
