@@ -18,6 +18,7 @@ public class DeathScript : MonoBehaviour
  
     private bool _playerIsDead = false;
     private float _timer = 11;
+    private bool _fadeOut = false;
 
     private void Start()
     {
@@ -71,5 +72,6 @@ public class DeathScript : MonoBehaviour
     public void PassedLevel()
     {
         DidntDie = true;
+        FirstlyDied = false;
     }
 }
