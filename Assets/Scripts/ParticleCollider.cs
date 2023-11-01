@@ -6,6 +6,9 @@ public class ParticleCollider : MonoBehaviour
 {
 
     public DeathScript _deathScript;
+    public AudioSource _death_SFX;
+    public AudioSource _backgroundMusic;
+    public AudioSource _backgroundSounds;
 
     private bool hit = false;
 
@@ -14,7 +17,9 @@ public class ParticleCollider : MonoBehaviour
         if (!hit)
         {
             hit = true;
-
+            _death_SFX.Play();
+            _backgroundMusic.Stop();
+            _backgroundSounds.Stop();
             _deathScript.PlayDeath();
         }
     }

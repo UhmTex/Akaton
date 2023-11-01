@@ -15,6 +15,9 @@ public class LightningBehavior : MonoBehaviour
     public ParticleSystem Lightning_Windup;
     public ParticleSystem Lightning_Explosion;
     public ParticleSystem Lightning_Residue;
+    public AudioSource Lightning_SFX;
+
+    public bool _playerIsDead = false;
 
 
     private void Start()
@@ -35,6 +38,8 @@ public class LightningBehavior : MonoBehaviour
             yield return new WaitForSeconds(5.3f);
 
             lightningEffect.Play();
+            if (!_playerIsDead)
+                Lightning_SFX.Play();
             Lightning_Residue.Play();
 
             Lightning_Explosion.Play();

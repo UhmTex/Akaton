@@ -15,6 +15,7 @@ public class DeathScript : MonoBehaviour
     [SerializeField] FadeScript _fadeScriptText;
     [SerializeField] FadeScript _fadeOutImage;
     [SerializeField] MovementHandler _playersMovement;
+    [SerializeField] LightningBehavior[] _lightnings;
  
     private bool _playerIsDead = false;
     private float _timer = 11;
@@ -64,6 +65,10 @@ public class DeathScript : MonoBehaviour
     {
         _playerIsDead = true;
         _playersMovement.PlayerIsDead = true;
+        foreach (LightningBehavior lightning in _lightnings)
+        {
+            lightning._playerIsDead = true;
+        }
         _fadeScriptCanvas.FadeIn();
         FirstlyDied = true;
         DidntDie = true;
