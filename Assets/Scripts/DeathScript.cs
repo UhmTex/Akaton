@@ -26,14 +26,14 @@ public class DeathScript : MonoBehaviour
         {
             _fadeOutImage.GetComponent<CanvasGroup>().alpha = 0f;
         }
-        if (FirstlyDied || SceneManager.GetActiveScene().buildIndex > 0 && !DidntDie)
+        if (FirstlyDied || SceneManager.GetActiveScene().buildIndex > 1 && !DidntDie)
         {
             GetComponent<CanvasGroup>().alpha = 1.0f;
             _fadeScriptCanvas.FadeOut();
         }
         else
         {
-            if (SceneManager.GetActiveScene().buildIndex != 0)
+            if (SceneManager.GetActiveScene().buildIndex != 1)
                 _fadeOutImage.GetComponent<CanvasGroup>().alpha = 1.0f;
             _fadeOutImage.FadeOut();
         }
