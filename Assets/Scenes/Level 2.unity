@@ -45130,11 +45130,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6877515462904394932, guid: 373c4f9c07979224d8187042b5435e78, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.0005837112
+      value: 0.0005837281
       objectReference: {fileID: 0}
     - target: {fileID: 6877515462904394932, guid: 373c4f9c07979224d8187042b5435e78, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.00011772092
+      value: -0.00011772432
       objectReference: {fileID: 0}
     - target: {fileID: 8409072131597703673, guid: 373c4f9c07979224d8187042b5435e78, type: 3}
       propertyPath: _mainCam
@@ -68407,6 +68407,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -0.000061035156
       objectReference: {fileID: 0}
+    - target: {fileID: 4236335285894260005, guid: 69b9e0b2e17d7fa4198f279beb5065ee, type: 3}
+      propertyPath: m_Alpha
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5897270318406634244, guid: 69b9e0b2e17d7fa4198f279beb5065ee, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.9119191
@@ -68449,7 +68453,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7029407927094544858, guid: 69b9e0b2e17d7fa4198f279beb5065ee, type: 3}
       propertyPath: m_text
-      value: I have no place to go...
+      value: I have to find them...
       objectReference: {fileID: 0}
     - target: {fileID: 7447575470856009210, guid: 69b9e0b2e17d7fa4198f279beb5065ee, type: 3}
       propertyPath: m_Name
