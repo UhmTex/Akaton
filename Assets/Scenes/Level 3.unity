@@ -1719,6 +1719,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1311022394}
     m_Modifications:
+    - target: {fileID: 294966628951672697, guid: f10be7fa2131da4409e66ee301b0910d, type: 3}
+      propertyPath: m_Name
+      value: DeadFox (2)
+      objectReference: {fileID: 0}
     - target: {fileID: 9026463464100659141, guid: f10be7fa2131da4409e66ee301b0910d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 104.08221
@@ -1758,10 +1762,6 @@ PrefabInstance:
     - target: {fileID: 9026463464100659141, guid: f10be7fa2131da4409e66ee301b0910d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: -2.185
-      objectReference: {fileID: 0}
-    - target: {fileID: 294966628951672697, guid: f10be7fa2131da4409e66ee301b0910d, type: 3}
-      propertyPath: m_Name
-      value: DeadFox (2)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5671,6 +5671,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1311022394}
     m_Modifications:
+    - target: {fileID: 294966628951672697, guid: f10be7fa2131da4409e66ee301b0910d, type: 3}
+      propertyPath: m_Name
+      value: DeadFox
+      objectReference: {fileID: 0}
     - target: {fileID: 9026463464100659141, guid: f10be7fa2131da4409e66ee301b0910d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 11.393726
@@ -5710,10 +5714,6 @@ PrefabInstance:
     - target: {fileID: 9026463464100659141, guid: f10be7fa2131da4409e66ee301b0910d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 7.02
-      objectReference: {fileID: 0}
-    - target: {fileID: 294966628951672697, guid: f10be7fa2131da4409e66ee301b0910d, type: 3}
-      propertyPath: m_Name
-      value: DeadFox
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -16345,6 +16345,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1311022394}
     m_Modifications:
+    - target: {fileID: 294966628951672697, guid: f10be7fa2131da4409e66ee301b0910d, type: 3}
+      propertyPath: m_Name
+      value: DeadFox (1)
+      objectReference: {fileID: 0}
     - target: {fileID: 9026463464100659141, guid: f10be7fa2131da4409e66ee301b0910d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 67.41709
@@ -16384,10 +16388,6 @@ PrefabInstance:
     - target: {fileID: 9026463464100659141, guid: f10be7fa2131da4409e66ee301b0910d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 3.656
-      objectReference: {fileID: 0}
-    - target: {fileID: 294966628951672697, guid: f10be7fa2131da4409e66ee301b0910d, type: 3}
-      propertyPath: m_Name
-      value: DeadFox (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -19676,19 +19676,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 893633100144850406, guid: 2e6da8c16c2a74c4990bcb20aa360a08, type: 3}
       propertyPath: m_CullingMask.m_Bits
-      value: 2816
+      value: 2824
       objectReference: {fileID: 0}
     - target: {fileID: 961741491628545589, guid: 2e6da8c16c2a74c4990bcb20aa360a08, type: 3}
       propertyPath: m_CullingMask.m_Bits
-      value: 2816
+      value: 2824
       objectReference: {fileID: 0}
     - target: {fileID: 2651688333327902341, guid: 2e6da8c16c2a74c4990bcb20aa360a08, type: 3}
       propertyPath: m_CullingMask.m_Bits
-      value: 2816
+      value: 2824
       objectReference: {fileID: 0}
     - target: {fileID: 4551073122832502883, guid: 2e6da8c16c2a74c4990bcb20aa360a08, type: 3}
       propertyPath: m_CullingMask.m_Bits
-      value: 2816
+      value: 2824
       objectReference: {fileID: 0}
     - target: {fileID: 6797033737639925527, guid: 2e6da8c16c2a74c4990bcb20aa360a08, type: 3}
       propertyPath: weight
@@ -20876,6 +20876,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1311022394}
     m_Modifications:
+    - target: {fileID: 294966628951672697, guid: f10be7fa2131da4409e66ee301b0910d, type: 3}
+      propertyPath: m_Name
+      value: DeadFox (3)
+      objectReference: {fileID: 0}
     - target: {fileID: 9026463464100659141, guid: f10be7fa2131da4409e66ee301b0910d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -20915,10 +20919,6 @@ PrefabInstance:
     - target: {fileID: 9026463464100659141, guid: f10be7fa2131da4409e66ee301b0910d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0.424
-      objectReference: {fileID: 0}
-    - target: {fileID: 294966628951672697, guid: f10be7fa2131da4409e66ee301b0910d, type: 3}
-      propertyPath: m_Name
-      value: DeadFox (3)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -21470,11 +21470,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3246063526511111645, guid: 373c4f9c07979224d8187042b5435e78, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.000000018988336
+      value: 0.000000018988336
       objectReference: {fileID: 0}
     - target: {fileID: 3246063526511111645, guid: 373c4f9c07979224d8187042b5435e78, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.0000000030850345
+      value: -0.0000000030850345
       objectReference: {fileID: 0}
     - target: {fileID: 3345685535872610484, guid: 373c4f9c07979224d8187042b5435e78, type: 3}
       propertyPath: m_Name
