@@ -61308,6 +61308,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3443013243572545654, guid: 7de922cdbe6ca064bb711d3de2d6a227, type: 3}
+      propertyPath: m_Alpha
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4640454095746841412, guid: 7de922cdbe6ca064bb711d3de2d6a227, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 59
