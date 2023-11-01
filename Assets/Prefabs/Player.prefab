@@ -10503,6 +10503,8 @@ MonoBehaviour:
   _nextLevelCanvas: {fileID: 0}
   _Interaction_SFX: {fileID: 0}
   _deathScript: {fileID: 0}
+  _lightnings: []
+  _movement: {fileID: 0}
 --- !u!143 &2012670034165511061
 CharacterController:
   m_ObjectHideFlags: 0
@@ -38140,7 +38142,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: e418a91b759609248945cf70d39a73c0, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 0.156
   m_Pitch: 1
   Loop: 0

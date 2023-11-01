@@ -35,7 +35,7 @@ public class FadeScript : MonoBehaviour
         {
             if (fadeIn)
             {
-                if (_uIGroup.tag == "DeathCanvas")
+                if (_uIGroup.CompareTag("DeathCanvas"))
                 {
                     _uIGroup.alpha += 0.5f * Time.deltaTime;
                     if (_uIGroup.alpha >= 1)
@@ -43,7 +43,7 @@ public class FadeScript : MonoBehaviour
                         fadeIn = false;
                     }
                 }
-                if (_uIGroup.tag == "DeathText")
+                if (_uIGroup.CompareTag("DeathText"))
                 {
                     _uIGroup.alpha += 0.3f * Time.deltaTime;
                     if (_uIGroup.alpha >= 1)
@@ -51,7 +51,7 @@ public class FadeScript : MonoBehaviour
                         fadeIn = false;
                     }
                 }
-                if (_uIGroup.tag == "FamilyPicture")
+                if (_uIGroup.CompareTag("FamilyPicture"))
                 {
                     _uIGroup.alpha += Time.deltaTime;
                     if (_uIGroup.alpha >= 1)
@@ -112,6 +112,14 @@ public class FadeScript : MonoBehaviour
                                 fadeIn = false;
                             }
                         }
+                    }
+                }
+                if (_uIGroup.CompareTag("StartMenu"))
+                {
+                    _uIGroup.alpha += Time.deltaTime;
+                    if (_uIGroup.alpha >= 1)
+                    {
+                        fadeIn = false;
                     }
                 }
             }
