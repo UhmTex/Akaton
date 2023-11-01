@@ -12,9 +12,11 @@ public class PickupScript : MonoBehaviour
     [SerializeField] InteractionPromtUI _interactionDisplay;
     [SerializeField] FadeScript _nextLevelCanvas;
     [SerializeField] AudioSource _Interaction_SFX;
+    [SerializeField] DeathScript _deathScript;
     private bool _eWasPressed = false;
-    private float _timerForNextScene = 2;
-    private float _timerForFade = 2f;
+    private bool _wasFaded = false;
+    private float _timerForNextScene = 2f;
+    private float _timerForFade = 10f;
 
     int _numFound;
 
@@ -40,7 +42,9 @@ public class PickupScript : MonoBehaviour
                     _timerForNextScene -= Time.deltaTime;
                 if (_timerForNextScene <= 0)
                 {
+                    _deathScript.PassedLevel();
                     _nextLevelCanvas.FadeIn();
+                    _wasFaded = true;
                     _timerForFade -= Time.deltaTime;
                     if ( _timerForFade <= 0 )
                         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);

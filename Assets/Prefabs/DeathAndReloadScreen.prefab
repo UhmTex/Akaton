@@ -251,6 +251,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _uIGroup: {fileID: 4236335285894260005}
+  _uIGroupSister: {fileID: 0}
+  _uIGroupMother: {fileID: 0}
+  _uIGroupFather: {fileID: 0}
+  _uIGroupThePicture: {fileID: 0}
   fadeIn: 0
   fadeOut: 0
 --- !u!225 &4236335285894260005
@@ -407,7 +411,7 @@ GameObject:
   - component: {fileID: 1196335981784543970}
   m_Layer: 0
   m_Name: DeathAndReloadScreen
-  m_TagString: Untagged
+  m_TagString: DeathCanvas
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -442,6 +446,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _uIGroup: {fileID: 1203821145679765709}
+  _uIGroupSister: {fileID: 0}
+  _uIGroupMother: {fileID: 0}
+  _uIGroupFather: {fileID: 0}
+  _uIGroupThePicture: {fileID: 0}
   fadeIn: 0
   fadeOut: 0
 --- !u!225 &1203821145679765709
@@ -470,6 +478,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _fadeScriptCanvas: {fileID: 3900935462046940217}
   _fadeScriptText: {fileID: 5471350693774718050}
+  _fadeOutImage: {fileID: 0}
   _playersMovement: {fileID: 0}
 --- !u!1 &7817744081920746969
 GameObject:

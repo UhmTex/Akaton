@@ -8,6 +8,8 @@ TagManager:
   - Full Crystal
   - Interactable
   - DeathText
+  - FamilyPicture
+  - DeathCanvas
   layers:
   - Default
   - TransparentFX

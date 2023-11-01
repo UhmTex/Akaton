@@ -9,19 +9,32 @@ using UnityEngine.SceneManagement;
 public class DeathScript : MonoBehaviour
 {
     public static bool FirstlyDied = false;
+    public static bool DidntDie = false;
 
     [SerializeField] FadeScript _fadeScriptCanvas;
     [SerializeField] FadeScript _fadeScriptText;
+    [SerializeField] FadeScript _fadeOutImage;
     [SerializeField] MovementHandler _playersMovement;
+ 
     private bool _playerIsDead = false;
     private float _timer = 11;
 
     private void Start()
     {
-        if (FirstlyDied || SceneManager.GetActiveScene().buildIndex > 0)
+        if (FirstlyDied)
+        {
+            _fadeOutImage.GetComponent<CanvasGroup>().alpha = 0f;
+        }
+        if (FirstlyDied || SceneManager.GetActiveScene().buildIndex > 0 && !DidntDie)
         {
             GetComponent<CanvasGroup>().alpha = 1.0f;
             _fadeScriptCanvas.FadeOut();
+        }
+        else
+        {
+            if (SceneManager.GetActiveScene().buildIndex != 0)
+                _fadeOutImage.GetComponent<CanvasGroup>().alpha = 1.0f;
+            _fadeOutImage.FadeOut();
         }
     }
 
@@ -52,5 +65,11 @@ public class DeathScript : MonoBehaviour
         _playersMovement.PlayerIsDead = true;
         _fadeScriptCanvas.FadeIn();
         FirstlyDied = true;
+        DidntDie = true;
+    }
+
+    public void PassedLevel()
+    {
+        DidntDie = true;
     }
 }
