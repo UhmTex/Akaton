@@ -721,7 +721,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: FamCanvas
       objectReference: {fileID: 0}
+    - target: {fileID: 4623961850871633438, guid: 44d343130f1ee2248b50edfdd19e1e38, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7052004928655779251, guid: 44d343130f1ee2248b50edfdd19e1e38, type: 3}
+      propertyPath: m_Alpha
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7433855889176327116, guid: 44d343130f1ee2248b50edfdd19e1e38, type: 3}
       propertyPath: m_Alpha
       value: 1
       objectReference: {fileID: 0}

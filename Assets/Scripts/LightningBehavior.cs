@@ -29,7 +29,7 @@ public class LightningBehavior : MonoBehaviour
     {
         yield return new WaitForSecondsRealtime(Random.Range(1, 4));
 
-        while (true)
+        while (!_playerIsDead)
         {
             Wrapper.transform.position = RandomSpawns[Random.Range(0, RandomSpawns.Length)].position;
 
@@ -38,8 +38,7 @@ public class LightningBehavior : MonoBehaviour
             yield return new WaitForSeconds(5.3f);
 
             lightningEffect.Play();
-            if (!_playerIsDead)
-                Lightning_SFX.Play();
+            Lightning_SFX.Play();
             Lightning_Residue.Play();
 
             Lightning_Explosion.Play();

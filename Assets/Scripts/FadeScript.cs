@@ -117,14 +117,28 @@ public class FadeScript : MonoBehaviour
             }
             if (fadeOut)
             {
-                if (_uIGroup.alpha > 0)
+                if (_uIGroup.CompareTag("FadeOut"))
                 {
-                    _uIGroup.alpha -= (0.5f * Time.deltaTime);
-                    if (_uIGroup.alpha == 0)
+                    if (_uIGroup.alpha > 0)
                     {
-                        fadeOut = false;
+                        _uIGroup.alpha -= (0.8f * Time.deltaTime);
+                        if (_uIGroup.alpha == 0)
+                        {
+                            fadeOut = false;
+                        }
                     }
                 }
+                else
+                {
+                    if (_uIGroup.alpha > 0)
+                    {
+                        _uIGroup.alpha -= (0.5f * Time.deltaTime);
+                        if (_uIGroup.alpha == 0)
+                        {
+                            fadeOut = false;
+                        }
+                    }
+                }    
             }
         }      
     }

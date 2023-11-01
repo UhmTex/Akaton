@@ -13,8 +13,8 @@ public class PickupScript : MonoBehaviour
     [SerializeField] FadeScript _nextLevelCanvas;
     [SerializeField] AudioSource _Interaction_SFX;
     [SerializeField] DeathScript _deathScript;
+    [SerializeField] LightningBehavior[] _lightnings;
     private bool _eWasPressed = false;
-    private bool _wasFaded = false;
     private float _timerForNextScene = 2f;
     private float _timerForFade = 12f;
 
@@ -37,6 +37,10 @@ public class PickupScript : MonoBehaviour
                 {
                     _eWasPressed = true;
                     _Interaction_SFX.Play();
+                    foreach(LightningBehavior lightning in _lightnings)
+                    {
+                        lightning._playerIsDead = true;
+                    }
                 } 
                 if (_eWasPressed && _timerForNextScene != 0)
                     _timerForNextScene -= Time.deltaTime;
@@ -44,7 +48,6 @@ public class PickupScript : MonoBehaviour
                 {
                     _deathScript.PassedLevel();
                     _nextLevelCanvas.FadeIn();
-                    _wasFaded = true;
                     _timerForFade -= Time.deltaTime;
                     if ( _timerForFade <= 0 )
                         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);

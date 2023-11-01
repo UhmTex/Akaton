@@ -10,6 +10,7 @@ TagManager:
   - DeathText
   - FamilyPicture
   - DeathCanvas
+  - FadeOut
   layers:
   - Default
   - TransparentFX

@@ -12207,6 +12207,22 @@ PrefabInstance:
       propertyPath: RandomSpawns.Array.data[14]
       value: 
       objectReference: {fileID: 573895581}
+    - target: {fileID: 3133099416023807872, guid: 64e5b6dd9cbce6440a5bdb4e86f22985, type: 3}
+      propertyPath: _death_SFX
+      value: 
+      objectReference: {fileID: 357142811}
+    - target: {fileID: 3133099416023807872, guid: 64e5b6dd9cbce6440a5bdb4e86f22985, type: 3}
+      propertyPath: _deathScript
+      value: 
+      objectReference: {fileID: 2035688612}
+    - target: {fileID: 3133099416023807872, guid: 64e5b6dd9cbce6440a5bdb4e86f22985, type: 3}
+      propertyPath: _backgroundMusic
+      value: 
+      objectReference: {fileID: 2066234026}
+    - target: {fileID: 3133099416023807872, guid: 64e5b6dd9cbce6440a5bdb4e86f22985, type: 3}
+      propertyPath: _backgroundSounds
+      value: 
+      objectReference: {fileID: 1753040057}
     - target: {fileID: 8454450916512727599, guid: 64e5b6dd9cbce6440a5bdb4e86f22985, type: 3}
       propertyPath: InitialModule.startLifetime.minScalar
       value: 2
@@ -12218,7 +12234,7 @@ PrefabInstance:
     - target: {fileID: 8510548464217165272, guid: 64e5b6dd9cbce6440a5bdb4e86f22985, type: 3}
       propertyPath: TriggerModule.primitives.Array.data[0]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1918738045}
     - target: {fileID: 8571222953182440644, guid: 64e5b6dd9cbce6440a5bdb4e86f22985, type: 3}
       propertyPath: m_Name
       value: LightningParticles group (3)
@@ -17214,11 +17230,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8690007478572507736, guid: 2e6da8c16c2a74c4990bcb20aa360a08, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.00058575586
+      value: 0.00058577285
       objectReference: {fileID: 0}
     - target: {fileID: 8690007478572507736, guid: 2e6da8c16c2a74c4990bcb20aa360a08, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.00010708403
+      value: -0.00010708714
       objectReference: {fileID: 0}
     - target: {fileID: 8813433807703031701, guid: 2e6da8c16c2a74c4990bcb20aa360a08, type: 3}
       propertyPath: m_Enabled
@@ -45195,6 +45211,22 @@ PrefabInstance:
       propertyPath: _nextLevelCanvas
       value: 
       objectReference: {fileID: 1817295941}
+    - target: {fileID: 534174085063629400, guid: 373c4f9c07979224d8187042b5435e78, type: 3}
+      propertyPath: _lightnings.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 534174085063629400, guid: 373c4f9c07979224d8187042b5435e78, type: 3}
+      propertyPath: _lightnings.Array.data[0]
+      value: 
+      objectReference: {fileID: 1892519657}
+    - target: {fileID: 534174085063629400, guid: 373c4f9c07979224d8187042b5435e78, type: 3}
+      propertyPath: _lightnings.Array.data[1]
+      value: 
+      objectReference: {fileID: 1837189011}
+    - target: {fileID: 534174085063629400, guid: 373c4f9c07979224d8187042b5435e78, type: 3}
+      propertyPath: _lightnings.Array.data[2]
+      value: 
+      objectReference: {fileID: 303589561}
     - target: {fileID: 793473586165304158, guid: 373c4f9c07979224d8187042b5435e78, type: 3}
       propertyPath: m_FollowOffset.y
       value: 5
@@ -45221,11 +45253,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1182382321177146672, guid: 373c4f9c07979224d8187042b5435e78, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.0005857559
+      value: 0.00058577285
       objectReference: {fileID: 0}
     - target: {fileID: 1182382321177146672, guid: 373c4f9c07979224d8187042b5435e78, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.00010708403
+      value: -0.00010708711
       objectReference: {fileID: 0}
     - target: {fileID: 1781504088796821202, guid: 373c4f9c07979224d8187042b5435e78, type: 3}
       propertyPath: m_FollowOffset.y
@@ -45257,11 +45289,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3246063526511111645, guid: 373c4f9c07979224d8187042b5435e78, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.00058759167
+      value: 0.0005876296
       objectReference: {fileID: 0}
     - target: {fileID: 3246063526511111645, guid: 373c4f9c07979224d8187042b5435e78, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.00009643821
+      value: -0.00009644445
       objectReference: {fileID: 0}
     - target: {fileID: 3345685535872610484, guid: 373c4f9c07979224d8187042b5435e78, type: 3}
       propertyPath: m_Name
@@ -45349,11 +45381,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6877515462904394932, guid: 373c4f9c07979224d8187042b5435e78, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.0005837281
+      value: 0.0005837112
       objectReference: {fileID: 0}
     - target: {fileID: 6877515462904394932, guid: 373c4f9c07979224d8187042b5435e78, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.00011772432
+      value: -0.00011772092
       objectReference: {fileID: 0}
     - target: {fileID: 7299963880245320153, guid: 373c4f9c07979224d8187042b5435e78, type: 3}
       propertyPath: m_Layer
@@ -62903,6 +62935,22 @@ PrefabInstance:
       propertyPath: RandomSpawns.Array.data[14]
       value: 
       objectReference: {fileID: 573895581}
+    - target: {fileID: 3133099416023807872, guid: 64e5b6dd9cbce6440a5bdb4e86f22985, type: 3}
+      propertyPath: _death_SFX
+      value: 
+      objectReference: {fileID: 357142811}
+    - target: {fileID: 3133099416023807872, guid: 64e5b6dd9cbce6440a5bdb4e86f22985, type: 3}
+      propertyPath: _deathScript
+      value: 
+      objectReference: {fileID: 2035688612}
+    - target: {fileID: 3133099416023807872, guid: 64e5b6dd9cbce6440a5bdb4e86f22985, type: 3}
+      propertyPath: _backgroundMusic
+      value: 
+      objectReference: {fileID: 2066234026}
+    - target: {fileID: 3133099416023807872, guid: 64e5b6dd9cbce6440a5bdb4e86f22985, type: 3}
+      propertyPath: _backgroundSounds
+      value: 
+      objectReference: {fileID: 1753040057}
     - target: {fileID: 8454450916512727599, guid: 64e5b6dd9cbce6440a5bdb4e86f22985, type: 3}
       propertyPath: InitialModule.startLifetime.minScalar
       value: 2
@@ -62914,7 +62962,7 @@ PrefabInstance:
     - target: {fileID: 8510548464217165272, guid: 64e5b6dd9cbce6440a5bdb4e86f22985, type: 3}
       propertyPath: TriggerModule.primitives.Array.data[0]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1918738045}
     - target: {fileID: 8571222953182440644, guid: 64e5b6dd9cbce6440a5bdb4e86f22985, type: 3}
       propertyPath: m_Name
       value: LightningParticles group (2)
@@ -64853,6 +64901,22 @@ PrefabInstance:
       propertyPath: RandomSpawns.Array.data[14]
       value: 
       objectReference: {fileID: 573895581}
+    - target: {fileID: 3133099416023807872, guid: 64e5b6dd9cbce6440a5bdb4e86f22985, type: 3}
+      propertyPath: _death_SFX
+      value: 
+      objectReference: {fileID: 357142811}
+    - target: {fileID: 3133099416023807872, guid: 64e5b6dd9cbce6440a5bdb4e86f22985, type: 3}
+      propertyPath: _deathScript
+      value: 
+      objectReference: {fileID: 2035688612}
+    - target: {fileID: 3133099416023807872, guid: 64e5b6dd9cbce6440a5bdb4e86f22985, type: 3}
+      propertyPath: _backgroundMusic
+      value: 
+      objectReference: {fileID: 2066234026}
+    - target: {fileID: 3133099416023807872, guid: 64e5b6dd9cbce6440a5bdb4e86f22985, type: 3}
+      propertyPath: _backgroundSounds
+      value: 
+      objectReference: {fileID: 1753040057}
     - target: {fileID: 8454450916512727599, guid: 64e5b6dd9cbce6440a5bdb4e86f22985, type: 3}
       propertyPath: InitialModule.startLifetime.minScalar
       value: 2
@@ -64864,7 +64928,7 @@ PrefabInstance:
     - target: {fileID: 8510548464217165272, guid: 64e5b6dd9cbce6440a5bdb4e86f22985, type: 3}
       propertyPath: TriggerModule.primitives.Array.data[0]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1918738045}
     - target: {fileID: 8571222953182440644, guid: 64e5b6dd9cbce6440a5bdb4e86f22985, type: 3}
       propertyPath: m_Name
       value: LightningParticles group (1)
@@ -65546,6 +65610,11 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 4028357392751601997, guid: 5edbf2b22446f1440bd3047f3646d7fa, type: 3}
   m_PrefabInstance: {fileID: 1916790483}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1918738045 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4259516898100655030, guid: 373c4f9c07979224d8187042b5435e78, type: 3}
+  m_PrefabInstance: {fileID: 1331503696}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1919995039
 PrefabInstance:
