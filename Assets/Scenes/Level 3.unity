@@ -12431,6 +12431,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 880927861633027132, guid: a65bb8a943e711d45a9480c6a594386e, type: 3}
+      propertyPath: InitialModule.startSize.scalar
+      value: 0.3
+      objectReference: {fileID: 0}
     - target: {fileID: 4700942475424946743, guid: a65bb8a943e711d45a9480c6a594386e, type: 3}
       propertyPath: m_Name
       value: SmokePartical Large
