@@ -2416,7 +2416,7 @@ GameObject:
   m_Component:
   - component: {fileID: 119333427}
   m_Layer: 0
-  m_Name: LightningSpot 1
+  m_Name: LightningSpot 1 - 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4472,7 +4472,7 @@ GameObject:
   m_Component:
   - component: {fileID: 231156945}
   m_Layer: 0
-  m_Name: LightningSpot 3
+  m_Name: LightningSpot 3 - 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5809,32 +5809,32 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1522121545329817472, guid: 64e5b6dd9cbce6440a5bdb4e86f22985, type: 3}
       propertyPath: RandomSpawns.Array.size
-      value: 15
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 1522121545329817472, guid: 64e5b6dd9cbce6440a5bdb4e86f22985, type: 3}
       propertyPath: RandomSpawns.Array.data[0]
       value: 
-      objectReference: {fileID: 119333427}
+      objectReference: {fileID: 1156977329}
     - target: {fileID: 1522121545329817472, guid: 64e5b6dd9cbce6440a5bdb4e86f22985, type: 3}
       propertyPath: RandomSpawns.Array.data[1]
       value: 
-      objectReference: {fileID: 542040312}
+      objectReference: {fileID: 1201168342}
     - target: {fileID: 1522121545329817472, guid: 64e5b6dd9cbce6440a5bdb4e86f22985, type: 3}
       propertyPath: RandomSpawns.Array.data[2]
       value: 
-      objectReference: {fileID: 231156945}
+      objectReference: {fileID: 1628733084}
     - target: {fileID: 1522121545329817472, guid: 64e5b6dd9cbce6440a5bdb4e86f22985, type: 3}
       propertyPath: RandomSpawns.Array.data[3]
       value: 
-      objectReference: {fileID: 345353389}
+      objectReference: {fileID: 119333427}
     - target: {fileID: 1522121545329817472, guid: 64e5b6dd9cbce6440a5bdb4e86f22985, type: 3}
       propertyPath: RandomSpawns.Array.data[4]
       value: 
-      objectReference: {fileID: 1893000642}
+      objectReference: {fileID: 231156945}
     - target: {fileID: 1522121545329817472, guid: 64e5b6dd9cbce6440a5bdb4e86f22985, type: 3}
       propertyPath: RandomSpawns.Array.data[5]
       value: 
-      objectReference: {fileID: 1336956593}
+      objectReference: {fileID: 1893000642}
     - target: {fileID: 1522121545329817472, guid: 64e5b6dd9cbce6440a5bdb4e86f22985, type: 3}
       propertyPath: RandomSpawns.Array.data[6]
       value: 
@@ -5842,7 +5842,7 @@ PrefabInstance:
     - target: {fileID: 1522121545329817472, guid: 64e5b6dd9cbce6440a5bdb4e86f22985, type: 3}
       propertyPath: RandomSpawns.Array.data[7]
       value: 
-      objectReference: {fileID: 1785846406}
+      objectReference: {fileID: 1331817438}
     - target: {fileID: 1522121545329817472, guid: 64e5b6dd9cbce6440a5bdb4e86f22985, type: 3}
       propertyPath: RandomSpawns.Array.data[8]
       value: 
@@ -5885,7 +5885,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8571222953182440644, guid: 64e5b6dd9cbce6440a5bdb4e86f22985, type: 3}
       propertyPath: m_Name
-      value: LightningParticles
+      value: LightningParticles group 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -20596,7 +20596,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1021014924}
   m_Layer: 0
-  m_Name: LightningSpot 13
+  m_Name: 'LightningSpot 13 '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -22122,6 +22122,139 @@ Transform:
   - {fileID: 1025176964}
   m_Father: {fileID: 1413829189}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1086210334
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 218234573317448558, guid: 64e5b6dd9cbce6440a5bdb4e86f22985, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -13.16
+      objectReference: {fileID: 0}
+    - target: {fileID: 218234573317448558, guid: 64e5b6dd9cbce6440a5bdb4e86f22985, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.44
+      objectReference: {fileID: 0}
+    - target: {fileID: 218234573317448558, guid: 64e5b6dd9cbce6440a5bdb4e86f22985, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -15.57
+      objectReference: {fileID: 0}
+    - target: {fileID: 218234573317448558, guid: 64e5b6dd9cbce6440a5bdb4e86f22985, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 218234573317448558, guid: 64e5b6dd9cbce6440a5bdb4e86f22985, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 218234573317448558, guid: 64e5b6dd9cbce6440a5bdb4e86f22985, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 218234573317448558, guid: 64e5b6dd9cbce6440a5bdb4e86f22985, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 218234573317448558, guid: 64e5b6dd9cbce6440a5bdb4e86f22985, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 218234573317448558, guid: 64e5b6dd9cbce6440a5bdb4e86f22985, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 218234573317448558, guid: 64e5b6dd9cbce6440a5bdb4e86f22985, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1522121545329817472, guid: 64e5b6dd9cbce6440a5bdb4e86f22985, type: 3}
+      propertyPath: RandomSpawns.Array.size
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1522121545329817472, guid: 64e5b6dd9cbce6440a5bdb4e86f22985, type: 3}
+      propertyPath: RandomSpawns.Array.data[0]
+      value: 
+      objectReference: {fileID: 106185800}
+    - target: {fileID: 1522121545329817472, guid: 64e5b6dd9cbce6440a5bdb4e86f22985, type: 3}
+      propertyPath: RandomSpawns.Array.data[1]
+      value: 
+      objectReference: {fileID: 1021014924}
+    - target: {fileID: 1522121545329817472, guid: 64e5b6dd9cbce6440a5bdb4e86f22985, type: 3}
+      propertyPath: RandomSpawns.Array.data[2]
+      value: 
+      objectReference: {fileID: 1191585684}
+    - target: {fileID: 1522121545329817472, guid: 64e5b6dd9cbce6440a5bdb4e86f22985, type: 3}
+      propertyPath: RandomSpawns.Array.data[3]
+      value: 
+      objectReference: {fileID: 542040312}
+    - target: {fileID: 1522121545329817472, guid: 64e5b6dd9cbce6440a5bdb4e86f22985, type: 3}
+      propertyPath: RandomSpawns.Array.data[4]
+      value: 
+      objectReference: {fileID: 345353389}
+    - target: {fileID: 1522121545329817472, guid: 64e5b6dd9cbce6440a5bdb4e86f22985, type: 3}
+      propertyPath: RandomSpawns.Array.data[5]
+      value: 
+      objectReference: {fileID: 1336956593}
+    - target: {fileID: 1522121545329817472, guid: 64e5b6dd9cbce6440a5bdb4e86f22985, type: 3}
+      propertyPath: RandomSpawns.Array.data[6]
+      value: 
+      objectReference: {fileID: 1785846406}
+    - target: {fileID: 1522121545329817472, guid: 64e5b6dd9cbce6440a5bdb4e86f22985, type: 3}
+      propertyPath: RandomSpawns.Array.data[7]
+      value: 
+      objectReference: {fileID: 1785846406}
+    - target: {fileID: 1522121545329817472, guid: 64e5b6dd9cbce6440a5bdb4e86f22985, type: 3}
+      propertyPath: RandomSpawns.Array.data[8]
+      value: 
+      objectReference: {fileID: 1331817438}
+    - target: {fileID: 1522121545329817472, guid: 64e5b6dd9cbce6440a5bdb4e86f22985, type: 3}
+      propertyPath: RandomSpawns.Array.data[9]
+      value: 
+      objectReference: {fileID: 1156977329}
+    - target: {fileID: 1522121545329817472, guid: 64e5b6dd9cbce6440a5bdb4e86f22985, type: 3}
+      propertyPath: RandomSpawns.Array.data[10]
+      value: 
+      objectReference: {fileID: 106185800}
+    - target: {fileID: 1522121545329817472, guid: 64e5b6dd9cbce6440a5bdb4e86f22985, type: 3}
+      propertyPath: RandomSpawns.Array.data[11]
+      value: 
+      objectReference: {fileID: 1201168342}
+    - target: {fileID: 1522121545329817472, guid: 64e5b6dd9cbce6440a5bdb4e86f22985, type: 3}
+      propertyPath: RandomSpawns.Array.data[12]
+      value: 
+      objectReference: {fileID: 1021014924}
+    - target: {fileID: 1522121545329817472, guid: 64e5b6dd9cbce6440a5bdb4e86f22985, type: 3}
+      propertyPath: RandomSpawns.Array.data[13]
+      value: 
+      objectReference: {fileID: 1628733084}
+    - target: {fileID: 1522121545329817472, guid: 64e5b6dd9cbce6440a5bdb4e86f22985, type: 3}
+      propertyPath: RandomSpawns.Array.data[14]
+      value: 
+      objectReference: {fileID: 1191585684}
+    - target: {fileID: 8454450916512727599, guid: 64e5b6dd9cbce6440a5bdb4e86f22985, type: 3}
+      propertyPath: InitialModule.startLifetime.minScalar
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8454450916512727599, guid: 64e5b6dd9cbce6440a5bdb4e86f22985, type: 3}
+      propertyPath: InitialModule.startLifetime.minMaxState
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8510548464217165272, guid: 64e5b6dd9cbce6440a5bdb4e86f22985, type: 3}
+      propertyPath: TriggerModule.primitives.Array.data[0]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8571222953182440644, guid: 64e5b6dd9cbce6440a5bdb4e86f22985, type: 3}
+      propertyPath: m_Name
+      value: LightningParticles group 2
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 64e5b6dd9cbce6440a5bdb4e86f22985, type: 3}
 --- !u!1001 &1088930366
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24014,7 +24147,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1156977329}
   m_Layer: 0
-  m_Name: LightningSpot 10
+  m_Name: LightningSpot 10 - 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -25077,7 +25210,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1201168342}
   m_Layer: 0
-  m_Name: LightningSpot 12
+  m_Name: LightningSpot 12 - 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -27697,7 +27830,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1331817438}
   m_Layer: 0
-  m_Name: LightningSpot 9
+  m_Name: LightningSpot 9 - 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -33964,7 +34097,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1628733084}
   m_Layer: 0
-  m_Name: LightningSpot 14
+  m_Name: LightningSpot 14 - 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -39360,7 +39493,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1893000642}
   m_Layer: 0
-  m_Name: LightningSpot 5
+  m_Name: LightningSpot 5 - 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -42706,7 +42839,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2021788280}
   m_Layer: 0
-  m_Name: LightningSpot 7
+  m_Name: LightningSpot 7 - 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -45310,3 +45443,4 @@ SceneRoots:
   - {fileID: 1085438854}
   - {fileID: 815337867}
   - {fileID: 301114333}
+  - {fileID: 1086210334}
