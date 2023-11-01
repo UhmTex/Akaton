@@ -44339,9 +44339,9 @@ ParticleSystem:
     enabled: 1
     startLifetime:
       serializedVersion: 2
-      minMaxState: 3
+      minMaxState: 0
       scalar: 2
-      minScalar: 1
+      minScalar: 2
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -93180,6 +93180,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b03abf754d26aab498084393723da120, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _deathScript: {fileID: 0}
 --- !u!1 &8571222953182440644
 GameObject:
   m_ObjectHideFlags: 0
@@ -93231,6 +93232,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lightningEffect: {fileID: 4978350631062995007}
   RandomSpawns:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
