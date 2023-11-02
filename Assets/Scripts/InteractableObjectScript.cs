@@ -15,6 +15,19 @@ public class InteractableObjectScript : MonoBehaviour
         {
             CrystalBehavior.Instance.PlayExplosion();
             _eWasPressed=true;
+            StartCoroutine(FadeOutAllVolume());
         }
+    }
+
+    IEnumerator FadeOutAllVolume()
+    {
+        while (AudioListener.volume > 0)
+        {
+            AudioListener.volume -= 0.1f;
+
+            yield return new WaitForSeconds(0.1f);
+        }
+
+        yield return null;
     }
 }
