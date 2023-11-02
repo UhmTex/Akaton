@@ -1494,9 +1494,11 @@ GameObject:
   m_Component:
   - component: {fileID: 1745291076}
   - component: {fileID: 1745291077}
+  - component: {fileID: 1745291078}
+  - component: {fileID: 1745291079}
   m_Layer: 5
   m_Name: QuitButton
-  m_TagString: Untagged
+  m_TagString: ReturnToMainMenu
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1530,6 +1532,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1745291075}
   m_CullTransparentMesh: 1
+--- !u!225 &1745291078
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1745291075}
+  m_Enabled: 1
+  m_Alpha: 0
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
+--- !u!114 &1745291079
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1745291075}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dff07a5465b642941b082c3628ca0710, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _uIGroup: {fileID: 1745291078}
+  _uIGroupSister: {fileID: 0}
+  _uIGroupMother: {fileID: 0}
+  _uIGroupFather: {fileID: 0}
+  _uIGroupThePicture: {fileID: 0}
+  fadeIn: 1
+  fadeOut: 0
 --- !u!1 &1807205281
 GameObject:
   m_ObjectHideFlags: 0

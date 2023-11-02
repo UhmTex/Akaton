@@ -122,6 +122,14 @@ public class FadeScript : MonoBehaviour
                         fadeIn = false;
                     }
                 }
+                if (_uIGroup.CompareTag("ReturnToMainMenu"))
+                {
+                    _fadeOutTimer -= Time.deltaTime;
+                    if (_fadeOutTimer <= 0)
+                    {
+                        _uIGroup.alpha += Time.deltaTime;
+                    }
+                }
             }
             if (fadeOut)
             {

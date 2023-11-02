@@ -12,6 +12,7 @@ TagManager:
   - DeathCanvas
   - FadeOut
   - StartMenu
+  - ReturnToMainMenu
   layers:
   - Default
   - TransparentFX
