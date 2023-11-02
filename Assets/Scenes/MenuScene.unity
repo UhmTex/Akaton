@@ -35850,7 +35850,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_TargetDisplay: 0
 --- !u!224 &1345043144
 RectTransform:
@@ -60839,6 +60839,10 @@ PrefabInstance:
       propertyPath: _fadeOutImage
       value: 
       objectReference: {fileID: 2011898457}
+    - target: {fileID: 1203821145679765709, guid: 69b9e0b2e17d7fa4198f279beb5065ee, type: 3}
+      propertyPath: m_Interactable
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5897270318406634244, guid: 69b9e0b2e17d7fa4198f279beb5065ee, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.9119191
