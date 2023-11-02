@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class BackGroundMusic : MonoBehaviour
 {
@@ -8,12 +9,17 @@ public class BackGroundMusic : MonoBehaviour
     public AudioSource _backgroundSounds;
     private void Awake()
     {
-        DontDestroyOnLoad(this);
+        if (SceneManager.GetActiveScene().buildIndex != 4)
+            DontDestroyOnLoad(this);
     }
 
     private void Start()
     {
-        _backgroundMusic.Play();
-        _backgroundSounds.Play();
+
+        if (SceneManager.GetActiveScene().buildIndex != 4)
+        {
+            _backgroundMusic.Play();
+            _backgroundSounds.Play();
+        }
     }
 }
